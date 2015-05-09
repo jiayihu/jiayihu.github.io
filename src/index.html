@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Steph Jiayi</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Steph Jiayi">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon/apple-touch-icon-precomposed.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="img/favicon/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#13001C">
+    <!-- Page style -->
+    <link rel="stylesheet" type="text/css" href="css/webstarterkit.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href="https://fontastic.s3.amazonaws.com/rCF78yMVV4SL487BLppioN/icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/outdatedbrowser.css">
+
+    <!-- Avoid Loading Spinner when JS is disabled -->
+    <noscript>
+            <style>
+            #loading {
+                display: none !important;
+            }
+            </style>
+    </noscript>
+</head>
+
+<body class="page--home">
+    <!-- Loading Spinner -->
+    <div id="loading">
+        <div>
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="animated-bg">
+        <canvas></canvas>
+        <div>
+            <div class="container">
+                <h1 class="xxlarge text-divider title">Steph Jiayi</h1>
+                <p class="page-header__excerpt">Welcome <strong>visitor</strong>, I am a young <strong>front-end developer and web designer</strong> with a soul burning for knowledge and emotions.
+                    <br>What I love most is telling <strong>wonderful stories</strong>, written by apparently normal people like you. My special ability is building websites which can <strong>add a gram of magic</strong> to everyone.
+                    <br>Rest for a while and feel free to visit my website while you decide what story to tell me.</p>
+                <p class="nav--bottom">
+                    <a class="link--primary" href="about.html">Know more about me</a>
+                    <a class="link--primary" href="portfolio.html">View my portfolio</a>
+                    <a class="link--primary" href="contact.html">Contact Me</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contact-wrapper">
+        <div class="contact">
+            <p class="contact__mail"><a href="mailto:steph.jiayi@gmail.com">steph.jiayi@gmail.com</a></p>
+            <p>Currently <strong>available</strong> as freelancer and looking for an interesting project to improve my skills.</p>
+            <p>
+                <a class="f-icon-twitter" href="https://twitter.com/steph_jiayi"></a>
+                <a class="f-icon-tumblr" href="http://shades-in-collision.tumblr.com"></a>
+                <a class="f-icon-github" href="https://github.com/stephjiayi"></a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Outdated browser notification -->
+    <div id="outdated">
+     <h6>Your browser is out-of-date!</h6>
+     <p>Update your browser to view this website correctly and avoid security flaws - Steph Jiayi. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+     <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+
+    <script src="/js/outdatedbrowser.min.js"></script>
+    <script>
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function() {
+                    if (oldonload) {
+                        oldonload();
+                    }
+                    func();
+                }
+            }
+        }
+        //call plugin function after DOM ready
+        addLoadEvent(function(){
+            outdatedBrowser({
+                bgColor: '#AB000B',
+                color: '#ffffff',
+                lowerThan: 'transform',
+                languagePath: ''
+            })
+        });
+    </script>
+    <script src="/js/lib/TweenLite.min.js"></script>
+    <script src="/js/lib/EasePack.min.js"></script>
+    <script src="/js/gsap.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js"></script>
+    <!-- Built with love using Web Starter Kit -->
+</body>
+
+</html>

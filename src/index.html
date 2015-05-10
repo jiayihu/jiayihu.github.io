@@ -23,14 +23,13 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link href="https://fontastic.s3.amazonaws.com/rCF78yMVV4SL487BLppioN/icons.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/outdatedbrowser.css">
-
     <!-- Avoid Loading Spinner when JS is disabled -->
     <noscript>
-            <style>
-            #loading {
-                display: none !important;
-            }
-            </style>
+        <style>
+        #loading {
+            display: none !important;
+        }
+        </style>
     </noscript>
 </head>
 
@@ -44,7 +43,6 @@
             </div>
         </div>
     </div>
-
     <!-- Main Content -->
     <section class="animated-bg">
         <canvas></canvas>
@@ -73,17 +71,15 @@
             </p>
         </div>
     </section>
-
     <!-- Outdated browser notification -->
     <div id="outdated">
-     <h6>Your browser is out-of-date!</h6>
-     <p>Update your browser to view this website correctly and avoid security flaws - Steph Jiayi. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
-     <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
-</div>
-
+        <h6>Your browser is out-of-date!</h6>
+        <p>Update your browser to view this website correctly and avoid security flaws - Steph Jiayi. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+        <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
     <script src="/js/outdatedbrowser.min.js"></script>
     <script>
-        function addLoadEvent(func) {
+    function addLoadEvent(func) {
             var oldonload = window.onload;
             if (typeof window.onload != 'function') {
                 window.onload = func;
@@ -97,14 +93,14 @@
             }
         }
         //call plugin function after DOM ready
-        addLoadEvent(function(){
-            outdatedBrowser({
-                bgColor: '#AB000B',
-                color: '#ffffff',
-                lowerThan: 'transform',
-                languagePath: ''
-            })
-        });
+    addLoadEvent(function() {
+        outdatedBrowser({
+            bgColor: '#AB000B',
+            color: '#ffffff',
+            lowerThan: 'transform',
+            languagePath: ''
+        })
+    });
     </script>
     <script src="/js/lib/TweenLite.min.js"></script>
     <script src="/js/lib/EasePack.min.js"></script>

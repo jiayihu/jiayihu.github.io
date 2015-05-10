@@ -183,6 +183,9 @@ video {
 .menu__button--open:hover::before {
   opacity: 0.7;
 }
+.menu__button--open:focus {
+  outline: none;
+}
 .menu__button--close {
   width: 16px;
   height: 16px;

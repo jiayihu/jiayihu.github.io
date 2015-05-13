@@ -90,3 +90,12 @@ gulp.task('pagespeed', pagespeed.bind(null, {
     url: 'https://example.com',
     strategy: 'mobile'
 }));
+
+gulp.task('copyHtml', function() {
+   gulp.src('src/*.html')
+   .pipe($.replace('index.html', '/index'))
+   .pipe($.replace('about.html', '/about'))
+   .pipe($.replace('portfolio.html', '/portfolio'))
+   .pipe($.replace('contact.html', '/contact'))
+   .pipe(gulp.dest('dist/'));
+});

@@ -79,28 +79,14 @@
     </div>
     <script src="/js/outdatedbrowser.min.js"></script>
     <script>
-    function addLoadEvent(func) {
-            var oldonload = window.onload;
-            if (typeof window.onload != 'function') {
-                window.onload = func;
-            } else {
-                window.onload = function() {
-                    if (oldonload) {
-                        oldonload();
-                    }
-                    func();
-                }
-            }
-        }
-        //call plugin function after DOM ready
-    addLoadEvent(function() {
+    window.onload = function() {
         outdatedBrowser({
             bgColor: '#AB000B',
             color: '#ffffff',
             lowerThan: 'transform',
             languagePath: ''
-        })
-    });
+        });
+    };
     </script>
     <script src="/js/lib/TweenLite.min.js"></script>
     <script src="/js/lib/EasePack.min.js"></script>

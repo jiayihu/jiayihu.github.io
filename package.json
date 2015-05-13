@@ -11,6 +11,7 @@
     "gulp-csso": "^0.2.9",
     "gulp-load-plugins": "^0.5.3",
     "gulp-minify-html": "^0.1.4",
+    "gulp-replace": "^0.5.3",
     "gulp-ruby-sass": "^0.7.1",
     "gulp-size": "^1.0.0",
     "gulp-strip-debug": "^1.0.2",

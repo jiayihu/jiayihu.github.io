@@ -93,9 +93,9 @@ gulp.task('pagespeed', pagespeed.bind(null, {
 
 gulp.task('copyHtml', function() {
    gulp.src('src/*.html')
-   .pipe($.replace('index.html', '/index'))
-   .pipe($.replace('about.html', '/about'))
-   .pipe($.replace('portfolio.html', '/portfolio'))
-   .pipe($.replace('contact.html', '/contact'))
+   .pipe($.replace('"index.html"', '"/index"'))
+   .pipe($.replace('"about.html"', '"/about"'))
+   .pipe($.replace('"portfolio.html"', '"/portfolio"'))
+   .pipe($.replace('"contact.html"', '"/contact"'))
    .pipe(gulp.dest('dist/'));
 });

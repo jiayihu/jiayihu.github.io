@@ -453,6 +453,22 @@ video {
   color: #32506d;
 }
 
+/* Nominee badges */
+.ribbon {
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  z-index: 99999;
+}
+@media only screen and (max-width: 619px) {
+  .ribbon {
+    display: none;
+  }
+}
+.ribbon.csswinner {
+  top: 200px;
+}
+
 /**
 *
 * PAGES

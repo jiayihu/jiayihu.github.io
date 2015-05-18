@@ -379,6 +379,24 @@ video {
         color: #32506d;
     }
 }
+
+
+/* Nominee badges */
+.ribbon {
+    position:fixed;
+    top:100px;
+    right:0px;
+    z-index:99999;
+
+    @include small-only {
+        display: none;
+    }
+
+    &.csswinner {
+        top: 200px;
+    }
+}
+
 /**
 *
 * PAGES

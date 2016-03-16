@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-attachment: fixed;
+  background-color: #fff;
+  color: $text;
+  font-family: 'Source Sans Pro', serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+a {
+  color: #000;
+  display: inline-block;
+  font-family: 'Source Code Pro', sans-serif;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: color ease-in-out .4s;
+
+  &::before {
+    border-style: solid;
+    border-width: 1px;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all .2s ease-in-out;
+    width: 100%;
+  }
+
+  &:hover::before {
+    transform: translateX(0);
+  }
+}
+
+p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: Source Code Pro;
+  font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}

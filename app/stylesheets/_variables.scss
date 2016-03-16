@@ -1,0 +1,22 @@
+// Colors
+$primary: #e84a5f;
+$primary-dark: darken($primary, 30%);
+$primary-light: #ff847c;
+$accent: #89c987;
+$accent-secondary: #fecea8;
+
+$gray: #727272;
+$gray-dark: #222;
+$gray-light: #D7D7DD;
+
+$white: #fff;
+$white-opacity: rgba(#fff, .54);
+
+$text: $gray-dark;
+$error: red;
+
+// Media queries breakpoints
+$screen-phone: 480px;
+$screen-tablet: 768px;
+$screen-desktop: 992px;
+$screen-lg-desktop: 1200px;

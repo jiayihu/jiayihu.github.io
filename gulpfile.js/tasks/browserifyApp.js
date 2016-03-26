@@ -21,11 +21,13 @@ var isProduction = process.env.NODE_ENV === 'production';
 var deps = Object.keys(packageManifest.dependencies); //[ 'react', 'react-dom' ]
 var customOpts = {
   cache: {},
-  packageCache: {},
   entries: paths.src,
+  extensions: ['.jsx'],
   debug: isProduction? false : true,
+  packageCache: {},
   transform: [
-    ['babelify', {presets: ['es2015', 'react']}]
+    ['babelify', {presets: ['es2015', 'react']}],
+    ['browserify-shim']
   ]
 };
 var appBundle = browserify(customOpts);

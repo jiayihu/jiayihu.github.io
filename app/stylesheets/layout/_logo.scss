@@ -1,0 +1,28 @@
+.logo {
+  backface-visibility: hidden;
+  color: $white-base;
+  left: 50%;
+  position: fixed;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 9;
+
+  @media (max-width: $screen-tablet) {
+    width: 100%;
+  }
+
+  &.black {
+    color: $gray-darker;
+  }
+
+  &__name {
+    font-size: 1.125rem;
+    margin-bottom: 0;
+  }
+
+  &__job {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0;
+  }
+}

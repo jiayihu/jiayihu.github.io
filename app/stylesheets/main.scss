@@ -1,5 +1,13 @@
 @import 'variables';
-@import 'third-party/normalize';
+
+@import 'bootstrap';
 
 @import 'base/base';
+
 @import 'layout/layout';
+@import 'layout/logo';
+
+@import 'sections/intro';
+@import 'sections/about';
+
+@import 'misc/animations';

@@ -29,6 +29,10 @@
       "extensions": ["scss", "css", "sass"]
     },
 
+    "deploy": {
+      "branch": "master"
+    },
+
     "fonts": {
       "src": "fonts",
       "dest": "fonts",
@@ -51,7 +55,7 @@
     },
 
     "scripts": {
-      "main": "app.jsx",
+      "main": "index.js",
       "src": "javascripts",
       "dest": "js",
       "extensions": ["js", "jsx"]

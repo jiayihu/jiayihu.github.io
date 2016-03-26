@@ -1,0 +1,36 @@
+.intro {
+  align-items: center;
+  background-color: $gray-darker;
+  color: $white;
+  display: flex;
+  position: relative;
+  transition: opacity .5s ease-out;
+}
+
+.little-prince {
+
+  blockquote {
+    color: $white-base;
+    font-size: 2.25rem;
+  }
+
+  figcaption {
+    font-family: 'Cardo', serif;
+    font-size: 1.5rem;
+  }
+}
+
+.scroll {
+  bottom: 1rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+
+  circle {
+    animation: 3s ease-out infinite scroll;
+  }
+
+  @media(max-width: $screen-desktop) {
+    display: none;
+  }
+}

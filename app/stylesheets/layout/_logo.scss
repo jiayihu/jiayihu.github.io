@@ -1,5 +1,6 @@
 .logo {
   backface-visibility: hidden;
+  background-color: $gray-darker;
   color: $white-base;
   left: 50%;
   position: fixed;
@@ -8,16 +9,32 @@
   z-index: 9;
 
   @media (max-width: $screen-tablet) {
-    width: 100%;
+    display: none;
   }
 
   &.black {
+    background-color: $white-base;
     color: $gray-darker;
+  }
+
+  &__name,
+  &__job {
+    color: inherit;
+    font-family: inherit;
+    line-height: 1.2;
   }
 
   &__name {
     font-size: 1.125rem;
     margin-bottom: 0;
+
+    a {
+      color: inherit;
+
+      &:before {
+        display: none;
+      }
+    }
   }
 
   &__job {

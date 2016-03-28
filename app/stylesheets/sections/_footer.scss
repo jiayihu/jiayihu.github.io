@@ -1,0 +1,21 @@
+footer {
+  padding: 5em 0 1em;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 32px;
+
+    @media (min-width: $screen-tablet) {
+      width: auto;
+    }
+  }
+}
+
+.copy {
+  font-size: .875rem;
+  margin-top: 0;
+}

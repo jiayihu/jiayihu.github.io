@@ -1,9 +1,8 @@
 {
   "rules": {
     "max-len": [2, {"code": 120, "tabWidth": 2, "ignoreUrls": true}],
-    "no-console": [
-        0
-    ],
+    "no-console": 0,
+    "no-shadow": 0,
     "react/prefer-stateless-function": 0,
     "valid-jsdoc": [
       1,

@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jiayi Hu -- Designer and developer -- steph_jiayi
 
 # THANKS
 
-    <name>
+    Noun Project
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    ES6 Javascript, React.js

@@ -1,3 +1,39 @@
 .about {
-  padding-top: 15vh;
+  @media (max-width: $screen-tablet) {
+    .col-ms-4,
+    .col-ms-8,
+    .col-lg-6 {
+      padding: 0;
+    }
+  }
+}
+
+.greeting {
+  font-size: 2.25rem;
+}
+
+.about-general {
+  color: $gray-dark;
+  font-family: 'Cardo', serif;
+  font-size: 1.25rem;
+  padding-top: 2rem;
+}
+
+.about-detailed {
+  padding-top: 2rem;
+
+  .icon {
+    display: block;
+    margin: 2em auto 1em;
+
+    &--speed {
+      margin-top: 1em;
+    }
+
+    @media (min-width: $screen-lg-desktop) {
+      &--ux {
+        margin: 0 auto 1em;
+      }
+    }
+  }
 }

@@ -1,5 +1,16 @@
 .skills {
+  padding-bottom: 10rem;
   padding-top: 10rem;
+  transition: background-color .4s ease-out;
+
+  &.dark {
+    background-color: $gray-darker;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    margin-bottom: .5rem;
+  }
 }
 
 .skills-list {
@@ -35,6 +46,7 @@
   width: 20rem;
 
   @media (min-width: $screen-tablet) {
+    margin-top: 2rem;
     width: 25rem;
   }
 }

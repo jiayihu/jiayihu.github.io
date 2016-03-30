@@ -2,10 +2,8 @@ import React from 'react';
 import PubSub from 'pubsub-js';
 import Jump from 'jump.js';
 
-function subscriber(topic, data) {
-  if (data === 'white') {
-    this.classList.toggle('black');
-  }
+function subscriber() {
+  this.classList.toggle('black');
 }
 
 export default class Logo extends React.Component {
@@ -16,7 +14,7 @@ export default class Logo extends React.Component {
   scrollTop(e) {
     e.preventDefault();
     const jump = new Jump();
-    jump.jump('.intro', { duration: 1000 });
+    jump.jump('body', { duration: 1000 });
   }
 
   render() {

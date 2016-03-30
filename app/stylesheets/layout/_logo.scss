@@ -1,11 +1,11 @@
 .logo {
   backface-visibility: hidden;
-  background-color: $gray-darker;
   color: $white-base;
   left: 50%;
   position: fixed;
   top: 0;
   transform: translateX(-50%);
+  transition: color .7s ease-out;
   z-index: 9;
 
   @media (max-width: $screen-tablet) {
@@ -13,7 +13,6 @@
   }
 
   &.black {
-    background-color: $white-base;
     color: $gray-darker;
   }
 
@@ -42,4 +41,8 @@
     font-weight: 700;
     margin-top: 0;
   }
+}
+
+.case .logo {
+  color: $gray-darker;
 }

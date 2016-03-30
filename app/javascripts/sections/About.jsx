@@ -4,7 +4,10 @@ import PubSub from 'pubsub-js';
 import theaterJS from 'theaterjs';
 
 function inViewHandler(direction, PubSub, theater) {
-  PubSub.publish('bg-change', 'white');
+  PubSub.publish('bg-change', {
+    direction,
+    color: 'white',
+  });
   // theater.play();
 }
 
@@ -56,13 +59,12 @@ export default class About extends React.Component {
             <img className="icon icon--speed" src="/images/speed.svg" alt="Javascript speed" />
             Javascript ecosystem and its fast pace reflect my continous seek of innovation and
             improvement. It’s still young compared to other languages but it’s moving rapid with a
-            great will to make the difference and I feel exactly the same. There is just one
-            difference: <strong>I’m human</strong>.</p>
+            great will to make the difference and I feel exactly the same.</p>
           </div>
           <div className="col-lg-6">
-            <p>My humanity is the key to dominate Javascript. I rationally and carefully choose the
+            <p>Despite my excitement for new and fancy technologies, I rationally and carefully choose the
             frameworks, techniques and tools for my Agile workflow, picking the best compromise in
-            terms of stability, innovation and potential.</p>
+            terms of stability, innovation and power.</p>
             <p>
             <img className="icon icon--ux" src="/images/ux.svg" alt="User Interface and Experience" />
             In addition to my fondness for web development, I keep a sincere interest for UI

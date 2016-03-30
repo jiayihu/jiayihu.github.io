@@ -1,9 +1,26 @@
 import React from 'react';
+import Waypoint from 'Waypoint';
+import PubSub from 'pubsub-js';
+
+function inViewHandler(direction, PubSub) {
+  PubSub.publish('bg-change', 'black');
+}
 
 export default class Contact extends React.Component {
+  componentDidMount() {
+    const waypoint = new Waypoint({
+      element: this.section,
+      handler: (direction) => inViewHandler(direction, PubSub),
+      offset: '10%',
+    });
+  }
+
   render() {
     return (
-      <section className="contact container" >
+      <section
+        className="contact container"
+        ref={ (c) => (this.section = c) }
+      >
         <div>
           <h2>CONTACT</h2>
           <p>If you are interested in sharing your your ideas or talking with me for any

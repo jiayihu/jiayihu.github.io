@@ -19,17 +19,17 @@ blockquote {
   font-style: italic;
   line-height: 1em;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     font-family: serif;
     font-size: 1.5em;
   }
 
-  &:before {
+  &::before {
     content: '“';
   }
 
-  &:after {
+  &::after {
     content: '”';
   }
 }
@@ -44,7 +44,7 @@ a {
     margin-right: 1em;
   }
 
-  &:before {
+  &::before {
     background-color: currentColor;
     bottom: 0;
     content: '';
@@ -57,7 +57,11 @@ a {
     width: 100%;
   }
 
-  &:hover:before {
+  &:hover::before {
     transform: translateX(0);
   }
+}
+
+img {
+  max-width: 100%;
 }

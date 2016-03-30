@@ -3,8 +3,15 @@ import PubSub from 'pubsub-js';
 import Jump from 'jump.js';
 
 function subscriber(topic, data) {
-  if (data === 'white') {
-    this.classList.toggle('fade');
+  if (data.color === 'white') {
+    console.log(data);
+    const classList = this.classList;
+
+    if (data.direction === 'down') {
+      classList.add('fade');
+    } else {
+      classList.remove('fade');
+    }
   }
 }
 

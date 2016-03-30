@@ -50,12 +50,12 @@
   "dependencies": {
     "chart.js": "^1.0.2",
     "jump.js": "^0.3.2",
+    "nuka-carousel": "^1.1.1",
     "pubsub-js": "^1.5.3",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "react-redux": "^4.4.1",
     "react-router": "^2.0.1",
-    "redux": "^3.3.1",
+    "react-slick": "^0.11.1",
     "theaterjs": "^3.0.0"
   },
   "browser": {

@@ -6,11 +6,11 @@ export default class Radar extends React.Component {
   componentDidMount() {
     const ctx = this.canvas.getContext('2d');
     const data = {
-      labels: ['PERFORMANCE ANALYSIS', 'AGILE DEVELOPMENT', 'TESTABLE CODE', 'STANDARD COMPLIANT',
+      labels: ['PERFORMANCE ANALYSIS', 'AGILE DEVELOPMENT', 'TESTABLE CODE', 'DESIGN PATTERNS',
       'MAINTANABLE CODE'],
       datasets: [
         {
-          data: [85, 60, 65, 80, 85],
+          data: [85, 60, 65, 70, 85],
           fillColor: 'rgba(255,255,255,0)',
           pointColor: '#111',
           pointHighlightFill: '#fff',

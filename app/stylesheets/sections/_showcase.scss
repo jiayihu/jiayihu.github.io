@@ -6,22 +6,23 @@
   h2 {
     color: inherit;
   }
+}
 
-  .slider-decorator-0,
-  .slider-decorator-1 {
-    top: 75% !important;
+.slider-decorator-0,
+.slider-decorator-1 {
+  top: 75% !important;
 
-    @media (min-width: $screen-tablet) {
-      top: 50% !important;
-    }
+  @media (min-width: $screen-tablet) {
+    top: 50% !important;
   }
+}
 
-  .slider-decorator-2 {
-    bottom: 2rem;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-  }
+.slider-decorator-2 {
+  bottom: 2rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 9.5rem;
 }
 
 .carousel-ctrl {
@@ -69,6 +70,34 @@
   }
 }
 
+.carousel-dots {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
+  }
+
+  &__dot {
+    background-color: $white-lighter;
+    border: 0;
+    border-radius: 0;
+    height: 2px;
+    outline: 0;
+    padding: 0;
+    width: 2rem;
+
+    &--active,
+    &:focus {
+      background-color: $white-light;
+    }
+  }
+}
+
 .project {
   margin-top: 5rem;
 
@@ -103,6 +132,7 @@
     background-color: $white-base;
     border-radius: 0;
     color: $gray;
+    margin-bottom: 1rem;
     margin-top: 2rem;
     transition: all .4s ease-out;
 

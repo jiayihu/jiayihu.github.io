@@ -2,8 +2,25 @@ import React from 'react';
 import PubSub from 'pubsub-js';
 import Jump from 'jump.js';
 
-function subscriber() {
-  this.classList.toggle('black');
+function subscriber(topic, data) {
+  console.log(data);
+  const direction = data.direction;
+  const color = data.color;
+  const classList = this.classList;
+
+  if (direction === 'down') {
+    if (color === 'white') {
+      classList.add('black');
+    } else {
+      classList.remove('black');
+    }
+  } else {
+    if (color === 'white') {
+      classList.remove('black');
+    } else {
+      classList.add('black');
+    }
+  }
 }
 
 export default class Logo extends React.Component {

@@ -30,11 +30,15 @@ export default class Radar extends React.Component {
     };
     const radar = new Chart(ctx).Radar(data, options); // eslint-disable-line
 
-    const waypoint = new Waypoint({
+    this.waypoint = new Waypoint({
       element: this.canvas,
       handler: (dir) => dir === 'down' && new Chart(ctx).Radar(data, options), // eslint-disable-line
       offset: '60%',
     });
+  }
+
+  componentWillUnmount() {
+    this.waypoint.destroy();
   }
 
   render() {

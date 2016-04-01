@@ -6,8 +6,8 @@ export default class PrevController extends React.Component {
   }
 
   render() {
-    let className = 'carousel-ctrl carousel-ctrl--prev';
-    className += this.props.currentSlide === 0 ? ' carousel-ctrl--disabled' : '';
+    let className = 'arrow arrow--prev';
+    className += this.props.currentSlide === 0 ? ' arrow--disabled' : '';
 
     return (
       <button className={className} onClick={this.props.previousSlide} />

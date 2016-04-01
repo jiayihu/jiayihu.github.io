@@ -2,22 +2,9 @@ import React from 'react';
 import PubSub from 'pubsub-js';
 import Jump from 'jump.js';
 
-function subscriber(topic, data) {
-  if (data.color === 'white') {
-    console.log(data);
-    const classList = this.classList;
-
-    if (data.direction === 'down') {
-      classList.add('fade');
-    } else {
-      classList.remove('fade');
-    }
-  }
-}
-
 export default class Intro extends React.Component {
   componentDidMount() {
-    PubSub.subscribe('bg-change', subscriber.bind(this.section));
+    PubSub.subscribe('bg-change', this.subscriber.bind(this.section));
   }
 
   scrollPage() {
@@ -26,6 +13,18 @@ export default class Intro extends React.Component {
     jump.jump('.about', {
       duration: 1000,
     });
+  }
+
+  subscriber(topic, data) {
+    if (data.color === 'white') {
+      const classList = this.classList;
+
+      if (data.direction === 'down') {
+        classList.add('fade');
+      } else {
+        classList.remove('fade');
+      }
+    }
   }
 
   render() {

@@ -3,23 +3,44 @@ import Waypoint from 'Waypoint';
 import PubSub from 'pubsub-js';
 import Projects from '../components/Projects';
 
-function inViewHandler(direction, PubSub) {
-  console.log(direction);
-  PubSub.publish('bg-change', 'black');
-}
-
 export default class Showcase extends React.Component {
   componentDidMount() {
-    const waypoint = new Waypoint({
+    this.waypoint = new Waypoint({
+      continuous: false,
       element: this.section,
-      handler: (direction) => inViewHandler(direction, PubSub),
-      offset: '30%',
+      handler: (direction) => this.inViewHandler(direction, PubSub),
+    });
+    const height = - this.section.getBoundingClientRect().height;
+    this.waypoint2 = new Waypoint({
+      continuous: false,
+      element: this.section,
+      handler: (direction) => this.outViewHandler(direction, PubSub),
+      offset: height,
+    });
+  }
+
+  componentWillUnmount() {
+    this.waypoint.destroy();
+  }
+
+  inViewHandler(direction, PubSub) {
+    PubSub.publish('bg-change', {
+      direction,
+      color: 'black',
+    });
+  }
+
+  outViewHandler(direction, PubSub) {
+    PubSub.publish('bg-change', {
+      direction,
+      color: 'white',
     });
   }
 
   render() {
     return (
       <section
+        id="showcase"
         className="showcase"
         ref={ (c) => (this.section = c) }
       >

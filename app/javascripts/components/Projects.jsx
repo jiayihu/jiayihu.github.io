@@ -27,9 +27,9 @@ const Projects = React.createClass({
     const projectsData = [
       {
         preview: '/images/kanban.svg',
-        title: 'React.js Kanban 0',
-        tags: '#REACT #REDUX #ENZYME',
-        url: '/project/kanban',
+        title: 'Personal Website',
+        tags: '#REACT #ROUTER',
+        url: '/project/portfolio',
       },
       {
         preview: '/images/kanban.svg',

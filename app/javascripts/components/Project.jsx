@@ -5,7 +5,7 @@ export default class Project extends React.Component {
   render() {
     return (
       <div className="project col-sm-8 col-sm-offset-2">
-        <img className="project__preview" src={this.props.preview} alt="React Kanban" />
+        <img className="project__preview" src={this.props.preview} alt={this.props.title} />
         <div className="project__info">
           <div className="project__meta">
             <h3 className="project__title">{this.props.title}</h3>

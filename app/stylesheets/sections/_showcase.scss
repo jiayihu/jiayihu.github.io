@@ -25,51 +25,6 @@
   width: 9.5rem;
 }
 
-.carousel-ctrl {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0;
-  height: 4rem;
-  outline: 0;
-  width: 2.5rem;
-
-  @media (min-width: $screen-tablet) {
-    border: 1px solid $white-lighter;
-  }
-
-  &::before,
-  &::after {
-    background-color: $white-light;
-    content: '';
-    display: block;
-    height: 1px;
-    margin: 0 auto;
-    position: relative;
-    width: 1rem;
-  }
-
-  &::before {
-    top: -5px;
-    transform: rotate(-45deg);
-  }
-
-  &::after {
-    bottom: -5px;
-    transform: rotate(45deg);
-  }
-
-  &--next::before {
-    transform: rotate(45deg);
-  }
-
-  &--next::after {
-    transform: rotate(-45deg);
-  }
-
-  &--disabled {
-    opacity: 0;
-  }
-}
-
 .carousel-dots {
   list-style-type: none;
   padding-left: 0;
@@ -126,6 +81,7 @@
 
   &__tags {
     margin-bottom: 0;
+    text-align: left;
   }
 
   &__cta {

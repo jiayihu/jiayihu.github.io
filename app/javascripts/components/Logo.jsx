@@ -24,12 +24,27 @@ function subscriber(topic, data) {
 }
 
 export default class Logo extends React.Component {
+  constructor() {
+    super();
+    this.handleClick = this.handleClick.bind(this);
+  }
+
   componentDidMount() {
     PubSub.subscribe('bg-change', subscriber.bind(this.section));
   }
 
-  scrollTop(e) {
-    e.preventDefault();
+  handleClick() {
+    if (window.location.pathname === '/') {
+      this.scrollTop();
+    } else {
+      this.context.router.push({
+        pathname: '/',
+        hash: '#showcase',
+      });
+    }
+  }
+
+  scrollTop() {
     const jump = new Jump();
     jump.jump('body', { duration: 1000 });
   }
@@ -40,9 +55,13 @@ export default class Logo extends React.Component {
         className="logo container"
         ref={ (c) => (this.section = c) }
       >
-        <h1 className="logo__name"><a href="/" onClick={this.scrollTop}>Jiayi Hu</a></h1>
+        <h1 className="logo__name"><span onClick={this.handleClick}>Jiayi Hu</span></h1>
         <h3 className="logo__job">Front-end developer</h3>
       </header>
     );
   }
 }
+
+Logo.contextTypes = {
+  router: React.PropTypes.object.isRequired,
+};

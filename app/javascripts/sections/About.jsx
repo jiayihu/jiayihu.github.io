@@ -3,14 +3,6 @@ import Waypoint from 'Waypoint';
 import PubSub from 'pubsub-js';
 import theaterJS from 'theaterjs';
 
-function inViewHandler(direction, PubSub, theater) {
-  PubSub.publish('bg-change', {
-    direction,
-    color: 'white',
-  });
-  // theater.play();
-}
-
 export default class About extends React.Component {
   componentDidMount() {
     const theater = theaterJS({
@@ -27,11 +19,24 @@ export default class About extends React.Component {
       .addScene('me:Tardis traveller')
       .addScene(theater.replay);
 
-    const waypoint = new Waypoint({
+    this.waypoint = new Waypoint({
+      continuous: false,
       element: this.section,
-      handler: (direction) => inViewHandler(direction, PubSub, theater),
+      handler: (direction) => this.inViewHandler(direction),
       offset: '50%',
     });
+  }
+
+  componentWillUnmount() {
+    this.waypoint.destroy();
+  }
+
+  inViewHandler(direction) {
+    PubSub.publish('bg-change', {
+      direction,
+      color: 'white',
+    });
+    // theater.play();
   }
 
   render() {

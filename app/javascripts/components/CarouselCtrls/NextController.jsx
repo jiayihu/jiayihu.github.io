@@ -6,8 +6,8 @@ export default class NextController extends React.Component {
   }
 
   render() {
-    let className = 'carousel-ctrl carousel-ctrl--next';
-    className += this.props.currentSlide === this.props.slideCount - 1 ? ' carousel-ctrl--disabled' : '';
+    let className = 'arrow arrow--next';
+    className += this.props.currentSlide === this.props.slideCount - 1 ? ' arrow--disabled' : '';
 
     return (
       <button className={className} onClick={this.props.nextSlide} />

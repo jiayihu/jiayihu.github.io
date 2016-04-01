@@ -7,7 +7,7 @@ import Home from './Home';
 export default class Root extends Component {
   render() {
     return (
-      <Router history={browserHistory}>
+      <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={Home} />
           <Route path="/project/:name" component={Case} />

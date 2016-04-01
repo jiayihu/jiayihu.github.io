@@ -1,18 +1,7 @@
 import React from 'react';
-import PubSub from 'pubsub-js';
 import Radar from '../components/Radar';
 
-function subscriber(topic, data) {
-  if (data === 'black') {
-    this.classList.toggle('dark');
-  }
-}
-
 export default class Skills extends React.Component {
-  componentDidMount() {
-    PubSub.subscribe('bg-change', subscriber.bind(this.section));
-  }
-
   render() {
     return (
       <section

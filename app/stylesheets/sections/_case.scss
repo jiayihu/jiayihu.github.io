@@ -1,3 +1,73 @@
 .case {
+  font-size: 1.125rem;
+  position: relative;
 
+  .arrow {
+    backface-visibility: hidden;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  &__close {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid $gray-lighter;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    height: 3rem;
+    left: 50%;
+    position: absolute;
+    top: 5rem;
+    transform: translateX(-50%);
+    width: 3rem;
+    z-index: 9;
+
+    &::before,
+    &::after {
+      background-color: $gray-lighter;
+      content: '';
+      display: inline-block;
+      height: 1px;
+      left: .5rem;
+      position: absolute;
+      top: 50%;
+      width: 2rem;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__header {
+    padding: 30vh 0;
+  }
+
+  &__heading {
+    font-family: inherit;
+    font-weight: 600;
+    margin-top: 3rem;
+  }
+
+  &__preview {
+    display: block;
+    margin: 10rem auto;
+  }
+}
+
+.subtitle {
+  color: $gray-darker;
 }

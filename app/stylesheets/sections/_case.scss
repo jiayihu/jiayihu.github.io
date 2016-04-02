@@ -2,6 +2,26 @@
   font-size: 1.125rem;
   position: relative;
 
+  main {
+    h3,
+    h4 {
+      font-family: inherit;
+      font-weight: 600;
+      margin-top: 3rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    figure {
+      font-size: .875rem;
+      margin: 5rem auto;
+      text-align: center;
+    }
+  }
+
   .arrow {
     backface-visibility: hidden;
     position: fixed;
@@ -56,15 +76,17 @@
     padding: 30vh 0;
   }
 
-  &__heading {
-    font-family: inherit;
-    font-weight: 600;
-    margin-top: 3rem;
-  }
-
   &__preview {
     display: block;
     margin: 10rem auto;
+  }
+
+  &__back {
+    display: block;
+    margin: 5rem auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 5rem;
   }
 }
 

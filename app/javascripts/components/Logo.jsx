@@ -3,23 +3,15 @@ import PubSub from 'pubsub-js';
 import Jump from 'jump.js';
 
 function subscriber(topic, data) {
-  console.log(data);
   const direction = data.direction;
   const color = data.color;
   const classList = this.classList;
+  const isBgWhite = ((direction === 'down') && (color === 'white')) || ((direction === 'up') && (color === 'black'));
 
-  if (direction === 'down') {
-    if (color === 'white') {
-      classList.add('black');
-    } else {
-      classList.remove('black');
-    }
+  if (isBgWhite) {
+    classList.add('black');
   } else {
-    if (color === 'white') {
-      classList.remove('black');
-    } else {
-      classList.add('black');
-    }
+    classList.remove('black');
   }
 }
 
@@ -39,7 +31,6 @@ export default class Logo extends React.Component {
     } else {
       this.context.router.push({
         pathname: '/',
-        hash: '#showcase',
       });
     }
   }

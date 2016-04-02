@@ -19,8 +19,8 @@ export default class Project extends React.Component {
 }
 
 Project.propTypes = {
-  preview: PropTypes.string,
-  title: PropTypes.string,
-  tags: PropTypes.string,
-  url: PropTypes.string,
+  preview: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };

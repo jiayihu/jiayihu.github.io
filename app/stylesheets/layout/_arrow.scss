@@ -9,6 +9,11 @@
     border: 1px solid $white-lighter;
   }
 
+  &:hover::before,
+  &:hover::after {
+    background-color: $white-base;
+  }
+
   &::before,
   &::after {
     background-color: $white-light;
@@ -17,12 +22,18 @@
     height: 1px;
     margin: 0 auto;
     position: relative;
+    transition: background-color .4s ease-out;
     width: 1rem;
   }
 
   &--dark {
     @media (min-width: $screen-tablet) {
       border: 1px solid $gray-lighter;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $gray-dark;
     }
 
     &::before,
@@ -51,5 +62,14 @@
 
   &--disabled {
     opacity: 0;
+  }
+
+  [data-hint] {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }

@@ -1,26 +1,36 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 
 import Logo from '../components/Logo';
 import Portfolio from '../cases/Portfolio';
 import Kanban from '../cases/Kanban';
+import Chattina from '../cases/Chattina';
+import Tooltip from '../components/Tooltip';
 
 export default class Project extends React.Component {
   render() {
     const router = this.context.router;
     const cases = {
       portfolio: {
-        prevCase: 'chattina',
         content: Portfolio,
         nextCase: 'kanban',
+        prevCase: 'chattina',
+        title: 'My Personal Portfolio',
       },
       kanban: {
-        prevCase: 'portfolio',
         content: Kanban,
         nextCase: 'chattina',
+        prevCase: 'portfolio',
+        title: 'React.js Kanban Board',
+      },
+      chattina: {
+        content: Chattina,
+        nextCase: 'portfolio',
+        prevCase: 'kanban',
+        title: 'Chattina',
       },
     };
     const caseData = cases[this.props.params.name];
-    console.log(caseData);
     const caseElement = React.createElement(caseData.content);
 
     return (
@@ -28,15 +38,22 @@ export default class Project extends React.Component {
         <Logo />
         <button
           className="arrow arrow--dark arrow--prev"
-          onClick={ () => router.goBack() }
-        />
+          onClick={ () => router.push(`/project/${caseData.prevCase}`) }
+        >
+          <Tooltip hintText={cases[caseData.prevCase].title}position="right" />
+        </button>
         <button
           className="arrow arrow--dark arrow--next"
           onClick={ () => router.push(`/project/${caseData.nextCase}`) }
-        />
-        <div className="col-sm-8 col-sm-offset-2">
-          {caseElement}
+        >
+          <Tooltip hintText={cases[caseData.nextCase].title} position="left" />
+        </button>
+        <div className="row">
+          <div className="col-sm-8 col-sm-offset-2">
+            {caseElement}
+          </div>
         </div>
+        <Link to="/" className="case__back link">Go Back</Link>
       </div>
     );
   }

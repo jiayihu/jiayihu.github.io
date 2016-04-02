@@ -36,30 +36,6 @@ blockquote {
 
 a {
   color: $gray-darker;
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-
-  &:not(:last-child) {
-    margin-right: 1em;
-  }
-
-  &::before {
-    background-color: currentColor;
-    bottom: 0;
-    content: '';
-    display: block;
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transform: translateX(-100%);
-    transition: transform .5s ease-out;
-    width: 100%;
-  }
-
-  &:hover::before {
-    transform: translateX(0);
-  }
 }
 
 img {

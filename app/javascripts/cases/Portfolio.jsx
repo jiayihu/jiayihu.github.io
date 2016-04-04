@@ -33,6 +33,10 @@ export default class Portfolio extends React.Component {
             <p>My fonts of choice were instead <a href="https://www.google.com/fonts/specimen/Cardo">Cardo</a> & <a href="https://www.google.com/fonts/specimen/Source+Sans+Pro">Source Sans Pro</a>. The
             former reflects my love for paper books whereas the latter is my favourite sans-serif font
             and it resembles Source Code Pro, which I use roughly in my code editor.</p>
+            <figure>
+                <img src="/images/cases/portfolio/sketch.png" alt="Portfolio Sketch Design" />
+                <figcaption>Sketch Design</figcaption>
+            </figure>
 
             <h3>Development</h3>
             <p>Javascript is well-known for its huge number of tools and libraries. For this project
@@ -42,7 +46,7 @@ export default class Portfolio extends React.Component {
             configuration for ESLint.
             </p>
             <figure>
-                <img src="/images/cases/portfolio/workflow.svg" alt="Portfolio Development Workflow" />
+                <img src="/images/cases/portfolio/workflow.png" alt="Portfolio Development Workflow" />
                 <figcaption>Development Tools and Workflow</figcaption>
             </figure>
 
@@ -69,7 +73,7 @@ export default class Portfolio extends React.Component {
             there was already an issue on Github with several people asking for a fix.</p>
             <p>After spending an afternoon trying to analyse the issue, I managed to understand the problem
             and I really wished to help fixing it but it was a core problem, the code had no comments and
-            it was actually a bad mix of ES5 and ES6 bad practises. <br />
+            it was actually a mix of ES5 and ES6 bad practises. <br />
             So I pointed out the bug on Github, suggested my quick fix for anyone else, asked
             whether the project was still active and started to write my own component.</p>
             <p>Now I have a component usable wherever I want and with <strong>code I can trust</strong>.
@@ -81,10 +85,10 @@ export default class Portfolio extends React.Component {
 
             <h3>Conclusion</h3>
             <p>I feel like I grew a bit wiser after finishing my portfolio.</p>
-            <p>I read very interesting books, like <a href="http://www.amazon.com/Designing-Mind-Simple-Understanding-Interface/dp/012375030X">Designing with the Mind in Mind</a>, which helped me develop
+            <p>I read very interesting books, like <a href="http://www.amazon.com/Designing-Mind-Simple-Understanding-Interface/dp/012375030X">Designing with the Mind in Mind</a>, which helped me to develop
             further my sense of UI. I also increased my experience and understanding of React, for example its
-            lifecycle gave me some headaches because it altered Waypoints calculations in an unexpected way.</p>
-            <p>I feel also more relaxed now, since the website shows an actual image of me. I surely
+            lifecycle gave me some headaches because it altered <a href="http://imakewebthings.com/waypoints/">Waypoints.js</a> calculations in an unexpected way.</p>
+            <p>I can also take a long breath now, since the website shows an actual image of me. I surely
             will make changes in future, but I hope and believe that the core will last.</p>
           </main>
       </div>

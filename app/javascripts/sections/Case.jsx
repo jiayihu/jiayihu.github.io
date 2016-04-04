@@ -38,9 +38,9 @@ export default class Project extends React.Component {
         <Logo />
         <button
           className="arrow arrow--dark arrow--prev"
-          onClick={ () => router.push(`/project/${caseData.prevCase}`) }
+          onClick={ () => router.goBack() }
         >
-          <Tooltip hintText={cases[caseData.prevCase].title}position="right" />
+          <Tooltip hintText="Go Back" position="right" />
         </button>
         <button
           className="arrow arrow--dark arrow--next"

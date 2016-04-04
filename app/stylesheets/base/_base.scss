@@ -13,6 +13,10 @@ figcaption {
   font-style: italic;
 }
 
+p + p {
+  margin-top: .5em;
+}
+
 blockquote {
   border-left: 0;
   font-family: 'Cardo', serif;
@@ -40,4 +44,8 @@ a {
 
 img {
   max-width: 100%;
+}
+
+section {
+  padding: 10rem 0 5rem;
 }

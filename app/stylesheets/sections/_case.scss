@@ -20,6 +20,10 @@
       margin: 5rem auto;
       text-align: center;
     }
+
+    figcaption {
+      margin-top: 1rem;
+    }
   }
 
   .arrow {
@@ -27,6 +31,7 @@
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 9;
 
     &--prev {
       left: 0;
@@ -73,7 +78,11 @@
   }
 
   &__header {
-    padding: 30vh 0;
+    padding: 20vh 0;
+
+    @media (min-width: $screen-tablet) {
+      padding: 30vh 0;
+    }
   }
 
   &__preview {

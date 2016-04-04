@@ -24,10 +24,16 @@
 
   .icon {
     display: block;
+    height: 2rem;
     margin: 2em auto 1em;
+    width: 2rem;
 
     &--speed {
       margin-top: 1em;
+    }
+
+    &--connect {
+      width: 5rem;
     }
 
     @media (min-width: $screen-lg-desktop) {

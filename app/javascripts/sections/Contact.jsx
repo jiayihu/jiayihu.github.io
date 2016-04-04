@@ -11,7 +11,7 @@ export default class Contact extends React.Component {
           <p>
             <a className="link" href="mailto:contact@jiayihu.me" target="_blank">Email</a>
             <a className="link" href="https://github.com/jiayihu" target="_blank">Github</a>
-            <a className="link" href="https://twitter.com" target="_blank">Twitter</a>
+            <a className="link" href="https://twitter.com/steph_jiayi/" target="_blank">Twitter</a>
           </p>
         </div>
       </section>

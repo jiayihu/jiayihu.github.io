@@ -77,6 +77,7 @@
     font-family: inherit;
     margin-top: 0;
     margin-bottom: 0;
+    text-align: left;
   }
 
   &__tags {
@@ -84,7 +85,7 @@
     text-align: left;
   }
 
-  &__cta {
+  &__goto {
     background-color: $white-base;
     border-radius: 0;
     color: $gray;

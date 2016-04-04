@@ -26,27 +26,27 @@ const Projects = React.createClass({
   render() {
     const projectsData = [
       {
-        preview: '/images/kanban.svg',
+        preview: '/images/showcase/portfolio.svg',
         title: 'Personal Website',
         tags: '#REACT #ROUTER',
         url: '/project/portfolio',
       },
       {
-        preview: '/images/kanban.svg',
-        title: 'React.js Kanban 1',
+        preview: '/images/showcase/kanban.svg',
+        title: 'React.js Kanban',
         tags: '#REACT #REDUX #ENZYME',
         url: '/project/kanban',
       },
       {
-        preview: '/images/kanban.svg',
-        title: 'React.js Kanban 2',
-        tags: '#REACT #REDUX #ENZYME',
-        url: '/project/kanban',
+        preview: '/images/showcase/kanban.svg',
+        title: 'Chattina',
+        tags: '#MVC #VANILLA-JS',
+        url: '/project/chattina',
       },
       {
-        preview: '/images/kanban.svg',
-        title: 'React.js Kanban 3',
-        tags: '#REACT #REDUX #ENZYME',
+        preview: '/images/showcase/kanban.svg',
+        title: 'The Wealth Project',
+        tags: '#DATA #MVC #VANILLA-JS',
         url: '/project/kanban',
       },
     ];

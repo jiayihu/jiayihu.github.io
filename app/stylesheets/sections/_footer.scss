@@ -6,11 +6,13 @@ footer {
     margin-bottom: 0;
   }
 
-  img {
-    width: 32px;
+  svg {
+    height: 2rem;
+    width: 2rem;
 
     @media (min-width: $screen-tablet) {
-      width: auto;
+      height: 2.5rem;
+      width: 2.5rem;
     }
   }
 }

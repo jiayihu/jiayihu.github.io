@@ -4,11 +4,9 @@
 
 @import 'base/base';
 
-@import 'layout/layout';
-
-@import 'layout/logo';
-@import 'layout/link';
-@import 'layout/arrow';
+@import 'blocks/logo';
+@import 'blocks/link';
+@import 'blocks/arrow';
 
 @import 'sections/intro';
 @import 'sections/about';

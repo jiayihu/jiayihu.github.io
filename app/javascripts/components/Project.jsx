@@ -11,7 +11,7 @@ export default class Project extends React.Component {
             <h3 className="project__title">{this.props.title}</h3>
             <p className="project__tags">{this.props.tags}</p>
           </div>
-          <Link to={this.props.url} className="project__cta btn">SEE THIS WORK</Link>
+          <Link to={this.props.url} className="project__goto btn">SEE THIS WORK</Link>
         </div>
       </div>
     );

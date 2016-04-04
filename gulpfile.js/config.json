@@ -63,6 +63,12 @@
     "static": {
       "src": "static",
       "dest": "./"
+    },
+
+    "svgSprite": {
+      "src": "icons",
+      "dest": "images",
+      "extensions": ["svg"]
     }
   }
 }

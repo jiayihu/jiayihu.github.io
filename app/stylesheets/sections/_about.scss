@@ -6,6 +6,10 @@
       padding: 0;
     }
   }
+  &-icons {
+    margin-bottom: 1.9rem;
+    text-align: center;
+  }
 }
 
 .greeting {
@@ -23,23 +27,19 @@
   padding-top: 2rem;
 
   .icon {
-    display: block;
     height: 2rem;
-    margin: 2em auto 1em;
     width: 2rem;
 
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
     &--speed {
-      margin-top: 1em;
+      width: 2.5rem;
     }
 
     &--connect {
-      width: 5rem;
-    }
-
-    @media (min-width: $screen-lg-desktop) {
-      &--ux {
-        margin: 0 auto 1em;
-      }
+      width: 4rem;
     }
   }
 }

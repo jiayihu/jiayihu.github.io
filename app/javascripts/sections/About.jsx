@@ -62,22 +62,20 @@ export default class About extends React.Component {
               The wand chooses the wizard, Mr. Potter.
             </blockquote>
             <p>
-            <svg className="icon icon--speed"><use xlinkHref="/images/icons.svg#speed"></use></svg>
             Javascript ecosystem and its fast pace reflect my continous <strong>seek of innovation and
               improvement</strong>. It’s still young compared to other languages but it’s moving rapid with a
             great will to make the difference and I feel exactly the same.</p>
           </div>
           <div className="col-lg-6">
-            <p>Despite my excitement for new and fancy technologies, I rationally and carefully choose the
-            frameworks, techniques and tools for my Agile workflow, picking the best compromise in
-            terms of stability, innovation and power. I find it important to <strong>remain human</strong>.</p>
+            <p>Despite my excitement for new and fancy technologies, I find it important
+            to <strong>remain human</strong>. <br /> I rationally and carefully choose the frameworks,
+            techniques and tools for my Agile workflow, picking the best compromise in terms of
+            stability, innovation and power.</p>
             <p>
-            <svg className="icon icon--ux"><use xlinkHref="/images/icons.svg#ux"></use></svg>
             In addition to my fondness for web development, I keep a sincere interest for UI
             Design & User Experience since the ability to think like users do and build usable
             interfaces is the key to make products meet people needs.</p>
             <p>
-            <svg className="icon icon--connect"><use xlinkHref="/images/icons.svg#connect"></use></svg>
             I’m currently aiming for projects involving web application built with vanilla JS or
             ReactJS. <strong>I would also be very glad to collaborate/connect</strong> with some professional
             developer/designer while completing my studies at the University.</p>

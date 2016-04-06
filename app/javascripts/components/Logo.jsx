@@ -3,7 +3,6 @@ import PubSub from 'pubsub-js';
 import Jump from 'jump.js';
 
 function subscriber(topic, data) {
-  console.log(topic, data);
   const direction = data.direction;
   const color = data.color;
   const classList = this.classList;

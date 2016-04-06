@@ -62,10 +62,8 @@ export default class Portfolio extends React.Component {
 
             <h4>Custom Components</h4>
             <p>There were some UI elements which I needed and are very common like the carousel
-            in Projects section. Therefore I looked for a stand-alone React Carousel Component but
-            I eventually ended writing it on my own and I'm fully satisfied with this decision.</p>
-            <p>There are different repositories on Github which provide the component but most of them
-            include different other components which I didn't use, with therefore too
+            in Projects section and several repositories on Github provided the component but most of them
+            included different other components which I didn't use, with therefore too
             much <strong>dead code</strong> for me.</p>
             <p>Among stand-alone components there was a repo which seemed to fullfil my needs: small,
             customisation supported, ES6 and good amount of stars. Anyway after trying it for a while I

@@ -10,7 +10,7 @@ export default class App extends React.Component {
         transitionAppear
         transitionAppearTimeout={1000}
         transitionName="fade"
-        transitionEnterTimeout={1000}
+        transitionEnterTimeout={2000}
         transitionLeave={false}
       >
         <Logo key={`${this.props.location.pathname}logo`} />

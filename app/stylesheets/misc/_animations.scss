@@ -28,7 +28,7 @@
 }
 
 .fade-enter {
-  @include animated;
+  @include animated(2s);
   animation-name: fadeIn;
 }
 
@@ -48,6 +48,6 @@
 }
 
 .fade-leave {
-  @include animated;
+  @include animated(2s);
   animation-name: fadeOut;
 }

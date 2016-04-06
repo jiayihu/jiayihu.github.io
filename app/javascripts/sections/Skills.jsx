@@ -33,7 +33,7 @@ export default class Skills extends React.Component {
             <ul className="skills-list">
               <li>Git VCS</li>
               <li>Team Foundation VCS</li>
-              <li>Oh my ZSH</li>
+              <li>iTerm</li>
             </ul>
           </div>
         </div>

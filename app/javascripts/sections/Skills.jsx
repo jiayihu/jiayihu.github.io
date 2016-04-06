@@ -10,7 +10,10 @@ export default class Skills extends React.Component {
       >
         <div className="container">
           <h2>SKILLS</h2>
-          <div className="col-sm-5">
+          <div className="col-sm-7 col-lg-6">
+            <Radar />
+          </div>
+          <div className="col-sm-5 col-lg-offset-1">
             <h3>DEVELOPMENT</h3>
             <ul className="skills-list">
               <li>ES6 Javascript</li>
@@ -23,6 +26,7 @@ export default class Skills extends React.Component {
             <h3>DESIGN</h3>
             <ul className="skills-list">
               <li>Sketch</li>
+              <li>Invision</li>
               <li>Photoshop</li>
             </ul>
             <h3>OTHERS</h3>
@@ -31,9 +35,6 @@ export default class Skills extends React.Component {
               <li>Team Foundation VCS</li>
               <li>Oh my ZSH</li>
             </ul>
-          </div>
-          <div className="col-sm-7 col-lg-6 col-lg-offset-1">
-            <Radar />
           </div>
         </div>
       </section>

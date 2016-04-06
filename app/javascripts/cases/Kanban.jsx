@@ -5,7 +5,7 @@ export default class Kanban extends React.Component {
     return (
       <div>
         <header className="case__header">
-          <h2>React.js Kanban</h2>
+          <h2 className="case__heading">React.js Kanban</h2>
           <p className="subtitle">Web Application</p>
         </header>
         <main>

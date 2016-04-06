@@ -1,10 +1,29 @@
 import React from 'react';
+import Waypoint from 'Waypoint';
 import PubSub from 'pubsub-js';
 import Jump from 'jump.js';
 
 export default class Intro extends React.Component {
   componentDidMount() {
     PubSub.subscribe('bg-change', this.subscriber.bind(this.section));
+
+    this.waypoint = new Waypoint({
+      continuous: false,
+      element: this.section,
+      handler: (direction) => this.inViewHandler(direction),
+      offset: '50%',
+    });
+  }
+
+  componentWillUnmount() {
+    this.waypoint.destroy();
+  }
+
+  inViewHandler(direction) {
+    PubSub.publish('bg-change', {
+      direction,
+      color: 'black',
+    });
   }
 
   scrollPage() {
@@ -20,9 +39,9 @@ export default class Intro extends React.Component {
       const classList = this.classList;
 
       if (data.direction === 'down') {
-        classList.add('fade');
+        classList.add('intro--fade');
       } else {
-        classList.remove('fade');
+        classList.remove('intro--fade');
       }
     }
   }

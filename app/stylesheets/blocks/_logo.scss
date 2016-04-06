@@ -1,6 +1,6 @@
 .logo {
   backface-visibility: hidden;
-  color: $white-base;
+  color: $gray-darker;
   left: 50%;
   position: fixed;
   top: 0;
@@ -12,8 +12,10 @@
     display: none;
   }
 
-  &.black {
-    color: $gray-darker;
+  &.white {
+    color: $white-base;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
   }
 
   &__name,

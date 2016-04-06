@@ -10,7 +10,7 @@ footer {
     height: 2rem;
     width: 2rem;
 
-    @media (min-width: $screen-tablet) {
+    @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
       height: 2.5rem;
       width: 2.5rem;
     }

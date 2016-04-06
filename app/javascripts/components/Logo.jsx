@@ -3,15 +3,16 @@ import PubSub from 'pubsub-js';
 import Jump from 'jump.js';
 
 function subscriber(topic, data) {
+  console.log(topic, data);
   const direction = data.direction;
   const color = data.color;
   const classList = this.classList;
-  const isBgWhite = ((direction === 'down') && (color === 'white')) || ((direction === 'up') && (color === 'black'));
+  const isBgBlack = ((direction === 'down') && (color === 'black')) || ((direction === 'up') && (color === 'white'));
 
-  if (isBgWhite) {
-    classList.add('black');
+  if (isBgBlack) {
+    classList.add('white');
   } else {
-    classList.remove('black');
+    classList.remove('white');
   }
 }
 

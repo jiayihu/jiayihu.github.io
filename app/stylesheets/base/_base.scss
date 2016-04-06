@@ -1,12 +1,16 @@
 html,
 body {
   font-size: 16px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
 
   @media (min-width: $screen-lg-desktop) {
     font-size: 18px;
   }
+}
+
+h1,
+h2 {
+  margin-bottom: 1em;
+  margin-top: 2em;
 }
 
 figcaption {
@@ -47,5 +51,5 @@ img {
 }
 
 section {
-  padding: 10rem 0 5rem;
+  padding: 25vh 0;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import App from './App';
-import Case from './sections/Case';
+import Case from './Case';
 import Home from './Home';
 
 export default class Root extends Component {

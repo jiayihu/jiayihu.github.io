@@ -9,6 +9,7 @@ export default class Showcase extends React.Component {
       continuous: false,
       element: this.section,
       handler: (direction) => this.inViewHandler(direction, PubSub),
+      offset: '10%',
     });
     const height = - this.section.getBoundingClientRect().height;
     this.waypoint2 = new Waypoint({

@@ -1,0 +1,24 @@
+.hobbies {
+  &__heading {
+    margin: 0 auto 0 -15px;
+  }
+}
+
+.hobbies-list {
+  padding-left: 0;
+
+  &__item {
+    line-height: 1.25;
+    list-style-type: none;
+    margin-bottom: .5rem;
+
+    &--separate {
+      list-style-type: square;
+      margin-top: 2rem;
+    }
+
+    &--separate:first-child {
+      margin-top: 0;
+    }
+  }
+}

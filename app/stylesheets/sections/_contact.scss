@@ -1,7 +1,39 @@
 .contact {
   min-height: 80vh;
 
-  p {
-    font-size: 1.125rem;
+  .col-sm-6 {
+    padding-left: 0;
+  }
+
+  &__heading {
+    margin-top: 0;
+  }
+
+  &__modal-btn {
+    background-color: $white-base;
+    border: 2px solid currentColor;
+    color: $gray-dark;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    transition: all .4s ease-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $gray-dark;
+      border-color: $gray-dark;
+      color: $white-base;
+    }
+  }
+}
+
+.contacts-list {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: .5rem;
   }
 }

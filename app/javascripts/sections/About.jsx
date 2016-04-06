@@ -49,7 +49,8 @@ export default class About extends React.Component {
           <p className="greeting">CIAO,</p>
           <p>I’m Jiayi <small>[dʒʌɪ]</small>, 20y/o passionate <strong>front-end developer</strong>
           &nbsp;and <span className="me"></span> based in Padua, Italy.</p>
-          <p>I’m currently eagerly looking for a project involving <em>web applications</em> to sharpen my skills.</p>
+          <p>I’m currently eagerly looking for a project involving <strong>web applications</strong> to
+          sharpen my skills.</p>
         </div>
         <div className="about-detailed col-sm-8">
           <div className="col-lg-6">
@@ -62,14 +63,14 @@ export default class About extends React.Component {
             </blockquote>
             <p>
             <svg className="icon icon--speed"><use xlinkHref="/images/icons.svg#speed"></use></svg>
-            Javascript ecosystem and its fast pace reflect my continous seek of innovation and
-            improvement. It’s still young compared to other languages but it’s moving rapid with a
+            Javascript ecosystem and its fast pace reflect my continous <strong>seek of innovation and
+              improvement</strong>. It’s still young compared to other languages but it’s moving rapid with a
             great will to make the difference and I feel exactly the same.</p>
           </div>
           <div className="col-lg-6">
             <p>Despite my excitement for new and fancy technologies, I rationally and carefully choose the
             frameworks, techniques and tools for my Agile workflow, picking the best compromise in
-            terms of stability, innovation and power.</p>
+            terms of stability, innovation and power. I find it important to <strong>remain human</strong>.</p>
             <p>
             <svg className="icon icon--ux"><use xlinkHref="/images/icons.svg#ux"></use></svg>
             In addition to my fondness for web development, I keep a sincere interest for UI

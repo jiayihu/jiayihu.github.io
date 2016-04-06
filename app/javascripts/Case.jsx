@@ -1,11 +1,10 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 
-import Logo from '../components/Logo';
-import Portfolio from '../cases/Portfolio';
-import Kanban from '../cases/Kanban';
-import Chattina from '../cases/Chattina';
-import Tooltip from '../components/Tooltip';
+import Portfolio from './cases/Portfolio';
+import Kanban from './cases/Kanban';
+import Chattina from './cases/Chattina';
+import Tooltip from './components/Tooltip';
 
 export default class Project extends React.Component {
   render() {
@@ -35,7 +34,6 @@ export default class Project extends React.Component {
 
     return (
       <div className="case container">
-        <Logo />
         <button
           className="arrow arrow--dark arrow--prev"
           onClick={ () => router.goBack() }

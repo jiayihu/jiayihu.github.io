@@ -5,7 +5,7 @@ export default class Portfolio extends React.Component {
     return (
       <div>
         <header className="case__header">
-          <h2>My Personal Website</h2>
+          <h2 className="case__heading">My Personal Website</h2>
           <p className="subtitle">Portfolio</p>
         </header>
         <main>

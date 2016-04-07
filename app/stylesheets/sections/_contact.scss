@@ -1,7 +1,7 @@
 .contact {
   min-height: 80vh;
 
-  .col-sm-6 {
+  .col-sm-8 {
     padding-left: 0;
   }
 
@@ -13,11 +13,14 @@
     background-color: $white-base;
     border: 2px solid currentColor;
     color: $gray-dark;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    margin-top: 1rem;
+    display: block;
+    margin: 2rem auto;
     text-transform: uppercase;
     transition: all .4s ease-out;
+
+    @media (min-width: $screen-tablet) {
+      margin: 1.5rem 0;
+    }
 
     &:hover,
     &:active,
@@ -29,11 +32,64 @@
   }
 }
 
+.modal--contact {
+
+  .modal__heading {
+    color: $white-base;
+    padding: 3rem 0 2rem;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.contact-form {
+
+  &__send {
+    background-color: $white-base;
+    border: 0;
+    color: $gray-darker;
+    display: block;
+    margin: 2rem auto 0;
+
+    @media (min-width: $screen-tablet) {
+      bottom: 0;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%) translateY(50%);
+    }
+
+    &:hover,
+    &:focus {
+      color: $gray-darker;
+    }
+  }
+
+  &__textarea {
+    margin: 2em 15px 0;
+  }
+
+  &__msg {
+    resize: none;
+    height: 8em;
+  }
+}
+
 .contacts-list {
   list-style-type: none;
   padding-left: 0;
+  text-align: center;
 
   li {
+    display: inline-block;
     margin-bottom: .5rem;
+
+    @media (min-width: $screen-tablet) {
+      display: block;
+      text-align: left;
+    }
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
   }
 }

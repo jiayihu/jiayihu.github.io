@@ -9,14 +9,16 @@ body {
   }
 }
 
+section {
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+}
+
 h1,
 h2 {
   margin-bottom: 1em;
   margin-top: 2em;
-}
-
-figcaption {
-  font-style: italic;
 }
 
 p + p {
@@ -44,16 +46,19 @@ blockquote {
   }
 }
 
-a {
-  color: $gray-darker;
+figcaption {
+  font-style: italic;
 }
 
 img {
   max-width: 100%;
 }
 
-section {
-  align-items: center;
-  display: flex;
-  min-height: 100vh;
+button:focus {
+  box-shadow: 0;
+  outline: 0;
+}
+
+a {
+  color: $gray-darker;
 }

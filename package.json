@@ -50,11 +50,11 @@
   },
   "dependencies": {
     "chart.js": "^1.0.2",
+    "classnames": "^2.2.3",
     "jump.js": "^0.3.2",
     "nuka-carousel": "^1.1.1",
     "pubsub-js": "^1.5.3",
     "react": "^0.14.7",
-    "react-addons-css-transition-group": "^0.14.8",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.1",
     "svgxuse": "^1.1.16",

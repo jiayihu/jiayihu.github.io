@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import classnames from 'classnames';
 
 export default class DotController extends React.Component {
   constructor() {
@@ -11,8 +12,9 @@ export default class DotController extends React.Component {
   }
 
   render() {
-    let className = 'carousel-dots__dot';
-    className += this.props.isActive ? ' carousel-dots__dot--active' : '';
+    const className = classnames('carousel-dots__dot', {
+      'carousel-dots__dot--active': this.props.isActive,
+    });
 
     return (
       <li>

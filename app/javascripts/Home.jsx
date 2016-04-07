@@ -9,9 +9,13 @@ import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
 export default class Home extends React.Component {
+  componentDidMount() {
+    this.home.classList.add('fade-appear');
+  }
+
   render() {
     return (
-      <div>
+      <div ref={ (c) => (this.home = c) }>
         <Intro />
         <About />
         <Skills />

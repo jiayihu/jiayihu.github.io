@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import classnames from 'classnames';
 
 export default class PrevController extends React.Component {
   shouldComponentUpdate() {
@@ -6,8 +7,9 @@ export default class PrevController extends React.Component {
   }
 
   render() {
-    let className = 'arrow arrow--prev';
-    className += this.props.currentSlide === 0 ? ' arrow--disabled' : '';
+    const className = classnames('arrow', 'arrow--prev', {
+      'arrow--disabled': this.props.currentSlide === 0,
+    });
 
     return (
       <button className={className} onClick={this.props.previousSlide} />

@@ -1,10 +1,14 @@
 import React, { PropTypes } from 'react';
+import classnames from 'classnames';
 
 export default class Tooltip extends React.Component {
   render() {
     const { childText, hintText, isAnimated, position } = this.props;
-    let className = position ? `hint--${position}` : 'hint--top';
-    className += isAnimated ? ' hint--bounce' : '';
+    const className = classnames({
+      [`hint--${position}`]: position,
+      'hint--top': !position,
+      'hint--bounce': isAnimated,
+    });
 
     return (
       <span

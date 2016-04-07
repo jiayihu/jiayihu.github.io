@@ -7,6 +7,23 @@ import Chattina from './cases/Chattina';
 import Tooltip from './components/Tooltip';
 
 export default class Project extends React.Component {
+  componentDidMount() {
+    this.case.classList.add('fade-enter');
+  }
+
+  /**
+   * Restart the fade animation
+   */
+  componentWillUpdate() {
+    this.case.classList.remove('fade-enter');
+    // Trigger reflow. @see {https://css-tricks.com/restart-css-animation/}
+    this.case.offsetWidth; // eslint-disable-line
+  }
+
+  componentDidUpdate() {
+    this.case.classList.add('fade-enter');
+  }
+
   render() {
     const router = this.context.router;
     const cases = {
@@ -33,24 +50,27 @@ export default class Project extends React.Component {
     const caseElement = React.createElement(caseData.content);
 
     return (
-      <div className="case container">
+      <div className="case container" ref={ (c) => (this.case = c) }>
         <button
           className="arrow arrow--dark arrow--prev"
           onClick={ () => router.goBack() }
         >
           <Tooltip hintText="Go Back" position="right" />
         </button>
+
         <button
           className="arrow arrow--dark arrow--next"
           onClick={ () => router.push(`/project/${caseData.nextCase}`) }
         >
           <Tooltip hintText={cases[caseData.nextCase].title} position="left" />
         </button>
+
         <div className="row">
           <div className="col-sm-8 col-sm-offset-2">
             {caseElement}
           </div>
         </div>
+
         <Link to="/" className="case__back link">Go Back</Link>
       </div>
     );

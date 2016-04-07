@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import classnames from 'classnames';
 
 export default class NextController extends React.Component {
   shouldComponentUpdate() {
@@ -6,8 +7,9 @@ export default class NextController extends React.Component {
   }
 
   render() {
-    let className = 'arrow arrow--next';
-    className += this.props.currentSlide === this.props.slideCount - 1 ? ' arrow--disabled' : '';
+    const className = classnames('arrow', 'arrow--next', {
+      'arrow--disabled': this.props.currentSlide === this.props.slideCount - 1,
+    });
 
     return (
       <button className={className} onClick={this.props.nextSlide} />

@@ -24,7 +24,7 @@ export default class Modal extends React.Component {
   }
 
   render() {
-    const className = classnames('modal', 'modal--contact', 'modal--fade', {
+    const className = classnames('modal', this.props.className, 'modal--fade', {
       'modal--show': this.props.isOpen,
     });
 
@@ -47,6 +47,7 @@ export default class Modal extends React.Component {
 
 Modal.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
   isOpen: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   toggleModal: PropTypes.func.isRequired,

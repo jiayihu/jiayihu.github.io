@@ -60,7 +60,12 @@ export default class Contact extends React.Component {
             </ul>
           </div>
         </div>
-        <Modal isOpen={this.state.open} title="CONTACT ME" toggleModal={this.toggleModal}>
+        <Modal
+          className="modal--contact"
+          isOpen={this.state.open}
+          title="CONTACT ME"
+          toggleModal={this.toggleModal}
+        >
           <ContactForm />
         </Modal>
       </section>

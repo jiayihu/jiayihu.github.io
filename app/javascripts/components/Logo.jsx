@@ -2,19 +2,6 @@ import React from 'react';
 import PubSub from 'pubsub-js';
 import Jump from 'jump.js';
 
-function subscriber(topic, data) {
-  const direction = data.direction;
-  const color = data.color;
-  const classList = this.classList;
-  const isBgBlack = ((direction === 'down') && (color === 'black')) || ((direction === 'up') && (color === 'white'));
-
-  if (isBgBlack) {
-    classList.add('white');
-  } else {
-    classList.remove('white');
-  }
-}
-
 export default class Logo extends React.Component {
   constructor() {
     super();
@@ -22,7 +9,11 @@ export default class Logo extends React.Component {
   }
 
   componentDidMount() {
-    PubSub.subscribe('bg-change', subscriber.bind(this.section));
+    PubSub.subscribe('bg-change', this.subscriber.bind(this.section));
+  }
+
+  componentWillUpdate() {
+    this.section.classList.remove('white');
   }
 
   handleClick() {
@@ -40,14 +31,29 @@ export default class Logo extends React.Component {
     jump.jump('body', { duration: 1000 });
   }
 
+  subscriber(topic, data) {
+    const direction = data.direction;
+    const color = data.color;
+    const classList = this.classList;
+    const isBgBlack = ((direction === 'down') && (color === 'black')) || ((direction === 'up') && (color === 'white'));
+
+    if (isBgBlack) {
+      classList.add('white');
+    } else {
+      classList.remove('white');
+    }
+  }
+
   render() {
     return (
       <header
         className="logo container"
         ref={ (c) => (this.section = c) }
       >
-        <h1 className="logo__name"><span onClick={this.handleClick}>Jiayi Hu</span></h1>
-        <h3 className="logo__job">Front-end developer</h3>
+        <div className="logo__clickable" onClick={this.handleClick}>
+          <h1 className="logo__name">Jiayi Hu</h1>
+          <h3 className="logo__job">Front-end developer</h3>
+        </div>
       </header>
     );
   }

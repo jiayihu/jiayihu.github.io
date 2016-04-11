@@ -30,7 +30,7 @@ export default class Modal extends React.Component {
 
     return (
       <div>
-        <section className={className}>
+        <div className={className}>
           <div className="modal__content">
             <h3 className="modal__heading">{this.props.title}</h3>
             <div>
@@ -38,7 +38,7 @@ export default class Modal extends React.Component {
             </div>
             <button className="modal__close" onClick={this.closeModal}>&times;</button>
           </div>
-        </section>
+        </div>
         <div className="modal-overlay" onClick={this.closeModal} />
       </div>
     );

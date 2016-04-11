@@ -21,7 +21,7 @@ export default function Hobbies() {
             </li>
 
             <li className="hobbies-list__item hobbies-list__item--separate">
-              Science related topics: Math, Physics and Psychology. I hate Chemistry.
+              Science related topics: Math, Physics, Philosophy and Psychology. I hate Chemistry.
             </li>
 
             <li className="hobbies-list__item hobbies-list__item--separate">Watching TV Series like GoT,

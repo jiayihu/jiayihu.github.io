@@ -63,18 +63,21 @@ export default class About extends React.Component {
                 The wand chooses the wizard, Mr. Potter.
               </blockquote>
               <p>
-              Javascript ecosystem and its fast pace reflect my continous <strong>seek of innovation and
-                improvement</strong>. It’s still young compared to other languages but it’s moving rapid with a
-              great will to make the difference and I feel exactly the same.</p>
+                I'm basically a <strong>curious guy</strong> and I love being a web developer because I can analyse and
+                build websites/applications like the ones I visit every day. Moreover I really get
+                along with Javascript because it's young, powerful and has a very active community.<br />
+                Its pace is rapid, but I'm greedy about learning and maybe one day I will be able to
+                master it.
+              </p>
             </div>
             <div className="col-lg-6">
-              <p>Despite my excitement for new and fancy technologies, I find it important
+              <p>Anyway despite my excitement for new and fancy technologies, I find it important
               to <strong>remain human</strong>. <br /> I rationally and carefully choose the frameworks,
-              techniques and tools for my Agile workflow, picking the best compromise in terms of
+              techniques and tools for my Agile workflow, picking the best option in terms of
               stability, innovation and power.</p>
               <p>
-              In addition to my fondness for web development, I keep a sincere interest for UI
-              Design & User Experience since the ability to think like users do and build usable
+              In addition to my fondness for web development, I keep a <strong>sincere interest for UI
+                Design & User Experience</strong> since the ability to think like users do and build usable
               interfaces is the key to make products meet people needs.</p>
               <p>
               I’m currently aiming for projects involving web application built with vanilla JS or

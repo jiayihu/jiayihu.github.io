@@ -1,6 +1,5 @@
 .case {
   font-size: 1.125rem;
-  position: relative;
 
   main {
     h3,
@@ -26,7 +25,7 @@
 
     .link {
       color: $gray-darker;
-      margin: 1rem auto;
+      margin: 1rem 2rem;
       text-decoration: none;
       text-transform: uppercase;
     }
@@ -45,41 +44,6 @@
 
     &--next {
       right: 0;
-    }
-  }
-
-  &__close {
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid $gray-lighter;
-    border-radius: 50%;
-    cursor: pointer;
-    display: block;
-    height: 3rem;
-    left: 50%;
-    position: absolute;
-    top: 5rem;
-    transform: translateX(-50%);
-    width: 3rem;
-    z-index: 9;
-
-    &::before,
-    &::after {
-      background-color: $gray-lighter;
-      content: '';
-      display: inline-block;
-      height: 1px;
-      left: .5rem;
-      position: absolute;
-      top: 50%;
-      width: 2rem;
-    }
-
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
     }
   }
 

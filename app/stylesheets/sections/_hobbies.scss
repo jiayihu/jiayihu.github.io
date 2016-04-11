@@ -1,11 +1,17 @@
 .hobbies {
-  &__heading {
-    margin: 0 auto 0 -15px;
+  @media (min-width: $screen-tablet) {
+    .hobbies__heading {
+      margin: 0 auto 0 -15px;
+    }
   }
 }
 
 .hobbies-list {
-  padding-left: 0;
+  padding-left: 1rem;
+
+  @media (min-width: $screen-tablet) {
+    padding-left: 0;
+  }
 
   &__item {
     line-height: 1.25;

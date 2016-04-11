@@ -1,15 +1,19 @@
 .modal {
   backface-visibility: hidden;
   color: $white;
+  height: 100%;
   left: 0;
   padding: 0;
   position: fixed;
   top: 0;
   visibility: hidden;
+  width: 100%;
   z-index: 2000;
 
   @media (min-width: $screen-tablet) {
     left: 50%;
+    max-height: 30rem;
+    max-width: 30rem;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
@@ -25,6 +29,7 @@
 
   &--fade &__content {
     opacity: 0;
+    padding: 2rem auto;
     transform: scale(.7);
     transition: all .3s;
   }
@@ -36,14 +41,14 @@
 
   &__content {
     background-color: $gray-darker;
-    height: 100vh;
+    height: 100%;
+    overflow: auto;
     padding: 0 1rem;
     position: relative;
-    width: 100vw;
+    width: 100%;
 
     @media (min-width: $screen-tablet) {
-      height: 30rem;
-      width: 30rem;
+      overflow: initial;
     }
   }
 

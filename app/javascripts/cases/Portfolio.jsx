@@ -22,6 +22,8 @@ export default function Portfolio() {
                   › See the project repo
               </a>
           </p>
+          <p>You can also read the <a href="https://github.com/jiayihu/jiayihu.github.io/commits/dev" target="_blank">Commits log</a> to have an idea of the project evolution.
+          </p>
           <img className="case__preview" src="/images/cases/portfolio/preview.png" />
 
           <h3>Design</h3>

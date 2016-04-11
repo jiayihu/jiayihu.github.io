@@ -41,7 +41,6 @@ export default class Showcase extends React.Component {
   render() {
     return (
       <section
-        id="showcase"
         className="showcase"
         ref={ (c) => (this.section = c) }
       >

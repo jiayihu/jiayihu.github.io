@@ -1,51 +1,31 @@
 import React from 'react';
 
-export default class Kanban extends React.Component {
-  render() {
-    return (
-      <div>
-        <header className="case__header">
-          <h2 className="case__heading">React.js Kanban</h2>
-          <p className="subtitle">Web Application</p>
-        </header>
-        <main>
-            <h3 className="case__heading">Overview</h3>
-            <p>March 2016. Redesigning our personal website is a common desire for web designers or
-            developers and we all know how long it can actually take before the will becomes action.</p>
-            <p>In my case, I felt it was also a necessity because my previous website didn't reflect
-            the front-end developer I am currently. Tons of things happened since May 2015, when I ended
-            the previous version, and I felt it was counter-productive since visitors could receive
-            an outdated concept of me.</p>
-            <p><strong>I kept my passion for web development</strong> and will to realize people's dreams through my
-            work, but my knowledge is more experienced and I have <strong>something new to show</strong>.</p>
+export default function Kanban() {
+  return (
+    <div>
+      <header className="case__header">
+        <h2 className="case__heading">Kanban Board</h2>
+        <p className="subtitle">Web Application in React</p>
+      </header>
+      <main>
+          <h3 className="case__heading">Overview</h3>
+          <p><em>February 2016</em>.This project was developed starting from Survive.js tutorial,
+          which explains how to
+          create a basic Kanban Application (used in Agile development) with React.js, Webpack and
+          Alt.js as Flux compliant library.</p>
+          <p>I took a step further though and tried to make it a bit more challenging using Redux
+          instead of Alt.js, adding different extra features and building a fancier UI.</p>
+          <p>
+              <a className="link" href="https://github.com/jiayihu/react-kanban" target="_blank">
+                  › See the project repo
+              </a>
+              <a className="link" href="http://jiayihu.me/react-kanban/" target="_blank">
+                  › Try the application
+              </a>
+          </p>
 
-            <img className="case__preview" src="/images/cases/kanban/preview.png" />
-
-            <h3 className="case__heading">Overview</h3>
-            <p>March 2016. Redesigning our personal website is a common desire for web designers or
-            developers and we all know how long it can actually take before the will becomes action.</p>
-            <p>In my case, I felt it was also a necessity because my previous website didn't reflect
-            the front-end developer I am currently. Tons of things happened since May 2015, when I ended
-            the previous version, and I felt it was counter-productive since visitors could receive
-            an outdated concept of me.</p>
-
-            <h3 className="case__heading">Overview</h3>
-            <p>March 2016. Redesigning our personal website is a common desire for web designers or
-            developers and we all know how long it can actually take before the will becomes action.</p>
-            <p>In my case, I felt it was also a necessity because my previous website didn't reflect
-            the front-end developer I am currently. Tons of things happened since May 2015, when I ended
-            the previous version, and I felt it was counter-productive since visitors could receive
-            an outdated concept of me.</p>
-
-            <h3 className="case__heading">Overview</h3>
-            <p>March 2016. Redesigning our personal website is a common desire for web designers or
-            developers and we all know how long it can actually take before the will becomes action.</p>
-            <p>In my case, I felt it was also a necessity because my previous website didn't reflect
-            the front-end developer I am currently. Tons of things happened since May 2015, when I ended
-            the previous version, and I felt it was counter-productive since visitors could receive
-            an outdated concept of me.</p>
-          </main>
-      </div>
-    );
-  }
+          <img className="case__preview" src="/images/cases/kanban/preview.png" />
+        </main>
+    </div>
+  );
 }

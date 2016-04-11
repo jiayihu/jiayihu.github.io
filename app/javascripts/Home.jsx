@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from './components/Logo';
 import Intro from './sections/Intro';
 import About from './sections/About';
 import Skills from './sections/Skills';
@@ -16,6 +17,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div ref={ (c) => (this.home = c) }>
+        <Logo />
         <Intro />
         <About />
         <Skills />

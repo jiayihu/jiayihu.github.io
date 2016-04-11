@@ -4,7 +4,7 @@
   "description": "Personal portfolio",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jiayihu/gulp-react-browserify.git"
+    "url": "git@github.com:jiayihu/jiayihu.github.io.git"
   },
   "scripts": {
     "build": "gulp",
@@ -54,8 +54,8 @@
     "jump.js": "^0.3.2",
     "nuka-carousel": "^1.1.1",
     "pubsub-js": "^1.5.3",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
     "react-router": "^2.0.1",
     "svgxuse": "^1.1.16",
     "theaterjs": "^3.0.0"

@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 
+import Logo from './components/Logo';
 import Portfolio from './cases/Portfolio';
 import Kanban from './cases/Kanban';
 import Chattina from './cases/Chattina';
@@ -51,6 +52,7 @@ export default class Project extends React.Component {
 
     return (
       <div className="case container" ref={ (c) => (this.case = c) }>
+        <Logo />
         <button
           className="arrow arrow--dark arrow--prev"
           onClick={ () => router.goBack() }

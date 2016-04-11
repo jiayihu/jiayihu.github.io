@@ -12,10 +12,6 @@ export default class Logo extends React.Component {
     PubSub.subscribe('bg-change', this.subscriber.bind(this.section));
   }
 
-  componentWillUpdate() {
-    this.section.classList.remove('white');
-  }
-
   handleClick() {
     if (window.location.pathname === '/') {
       this.scrollTop();

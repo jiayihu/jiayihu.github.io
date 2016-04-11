@@ -22,7 +22,7 @@ export default class About extends React.Component {
     this.waypoint = new Waypoint({
       continuous: false,
       element: this.section,
-      handler: (direction) => this.inViewHandler(direction),
+      handler: (direction) => this.inViewHandler(direction, theater),
       offset: '50%',
     });
   }
@@ -31,12 +31,12 @@ export default class About extends React.Component {
     this.waypoint.destroy();
   }
 
-  inViewHandler(direction) {
+  inViewHandler(direction, theater) {
     PubSub.publish('bg-change', {
       direction,
       color: 'white',
     });
-    // theater.play();
+    theater.play();
   }
 
   render() {

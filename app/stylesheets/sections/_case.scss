@@ -23,6 +23,13 @@
     figcaption {
       margin-top: 1rem;
     }
+
+    .link {
+      color: $gray-darker;
+      margin-top: 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
   }
 
   .arrow {

@@ -116,7 +116,6 @@ export default class ContactForm extends React.Component {
             <input
               className="contact-form__name input__field input__field--hoshi"
               id="contact-form__name"
-              defaultValue="a@a"
               name="name"
               ref={ (c) => (this.name = c) }
               required
@@ -133,7 +132,6 @@ export default class ContactForm extends React.Component {
             <input
               className="contact-form__email input__field input__field--hoshi"
               id="contact-form__email"
-              defaultValue="luke@gmail.com"
               name="_replyto"
               ref={ (c) => (this.email = c) }
               required
@@ -149,7 +147,6 @@ export default class ContactForm extends React.Component {
           <textarea
             className="contact-form__msg input__field input__field--hoshi"
             id="contact-form__msg"
-            defaultValue="Hello how are you?:D"
             name="msg"
             ref={ (c) => (this.msg = c) }
             required

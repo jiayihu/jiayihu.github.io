@@ -33,7 +33,7 @@ const Projects = React.createClass({
       },
       {
         preview: '/images/showcase/kanban.svg',
-        title: 'React.js Kanban',
+        title: 'Kanban Board',
         tags: '#REACT #REDUX #ENZYME',
         url: '/project/kanban',
       },
@@ -43,17 +43,17 @@ const Projects = React.createClass({
         tags: '#MVC #VANILLA-JS',
         url: '/project/chattina',
       },
-      {
-        preview: '/images/showcase/kanban.svg',
-        title: 'The Wealth Project',
-        tags: '#DATA #MVC #VANILLA-JS',
-        url: '/project/kanban',
-      },
+      // {
+      //   preview: '/images/showcase/kanban.svg',
+      //   title: 'The Wealth Project',
+      //   tags: '#DATA #MVC #VANILLA-JS',
+      //   url: '/project/kanban',
+      // },
     ];
     const projectsList = projectsData.map((project, index) => <Project {...project} key={index} />);
 
     return (
-      <Carousel decorators={Decorators} dragging={false} >
+      <Carousel decorators={Decorators} >
         {projectsList}
       </Carousel>
     );

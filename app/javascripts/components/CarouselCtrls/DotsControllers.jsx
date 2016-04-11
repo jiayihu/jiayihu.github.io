@@ -12,7 +12,11 @@ export default class DotsControllers extends React.Component {
   }
 
   render() {
-    const indexes = [0, 1, 2, 3];
+    const indexes = [];
+    for (let i = 0; i < this.props.slideCount; i += 1) {
+      indexes[i] = i;
+    }
+
     const dots = indexes.map((index) => (
       <DotController
         isActive={this.props.currentSlide === index}

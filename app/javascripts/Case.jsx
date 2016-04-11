@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 
 import Logo from './components/Logo';
+import NotFound from './NotFound';
 import Portfolio from './cases/Portfolio';
 import Kanban from './cases/Kanban';
 import Chattina from './cases/Chattina';
@@ -9,7 +10,9 @@ import Tooltip from './components/Tooltip';
 
 export default class Project extends React.Component {
   componentDidMount() {
-    this.case.classList.add('fade-enter');
+    if (this.case) {
+      this.case.classList.add('fade-enter');
+    }
   }
 
   /**
@@ -48,6 +51,11 @@ export default class Project extends React.Component {
       },
     };
     const caseData = cases[this.props.params.name];
+
+    if (!caseData) {
+      return <NotFound />;
+    }
+
     const caseElement = React.createElement(caseData.content);
 
     return (

@@ -2,6 +2,7 @@
   backface-visibility: hidden;
   color: $gray-darker;
   left: 50%;
+  pointer-events: none;
   position: fixed;
   top: 0;
   transform: translateX(-50%);
@@ -19,6 +20,7 @@
   &__clickable {
     cursor: pointer;
     display: inline-block;
+    pointer-events: auto;
   }
 
   &__name,

@@ -5,7 +5,7 @@ export default function Chattina() {
     <div>
       <header className="case__header">
         <h2 className="case__heading">Chattina</h2>
-        <p className="subtitle">MVC Web Application in native ES6 Javascript</p>
+        <p className="subtitle">MVC Web Application in native Javascript</p>
       </header>
       <main>
           <h3 className="case__heading">Overview</h3>
@@ -20,7 +20,9 @@ export default function Chattina() {
               </a>
           </p>
 
-          <img className="case__preview" src="/images/cases/portfolio/preview.png" />
+          <img className="case__preview" src="/images/cases/chattina/chattina.svg" />
+
+          <h3 className="case__heading">Sorry, this case studio is still in progress.</h3>
         </main>
     </div>
   );

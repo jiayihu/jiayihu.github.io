@@ -9,7 +9,7 @@ export default function Kanban() {
       </header>
       <main>
           <h3 className="case__heading">Overview</h3>
-          <p><em>February 2016</em>.This project was developed starting from Survive.js tutorial,
+          <p><em>February 2016</em>. This project was developed starting from <a href="https://github.com/survivejs/webpack_react">Survive.js tutorial</a>,
           which explains how to
           create a basic Kanban Application (used in Agile development) with React.js, Webpack and
           Alt.js as Flux compliant library.</p>
@@ -25,6 +25,8 @@ export default function Kanban() {
           </p>
 
           <img className="case__preview" src="/images/cases/kanban/preview.png" />
+
+          <h3 className="case__heading">Sorry, this case studio is still in progress.</h3>
         </main>
     </div>
   );

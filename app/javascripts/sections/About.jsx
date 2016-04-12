@@ -42,10 +42,10 @@ export default class About extends React.Component {
   render() {
     return (
       <section
-        className="about container"
+        className="about"
         ref={ (c) => (this.section = c) }
       >
-        <div className="row">
+        <div className="container">
           <div className="about-general col-sm-4">
             <p className="greeting">CIAO,</p>
             <p>I’m Jiayi <small>[dʒʌɪ]</small>, 20y/o passionate <strong>front-end developer</strong>

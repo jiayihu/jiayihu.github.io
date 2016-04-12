@@ -38,7 +38,7 @@ const Projects = React.createClass({
         url: '/project/kanban',
       },
       {
-        preview: '/images/showcase/kanban.svg',
+        preview: '/images/showcase/chattina.svg',
         title: 'Chattina',
         tags: '#MVC #VANILLA-JS',
         url: '/project/chattina',

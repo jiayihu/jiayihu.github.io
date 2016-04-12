@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="177px" height="288px" viewBox="0 0 177 288" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>chattina</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Portfolio" transform="translate(-424.000000, -249.000000)">
+            <g id="project" transform="translate(219.000000, 249.000000)">
+                <g id="chattina" transform="translate(206.000000, 0.000000)">
+                    <rect id="Rectangle-57" stroke-opacity="0.499207428" stroke="#FFFFFF" x="0" y="0" width="175" height="288" rx="10"></rect>
+                    <circle id="Oval-36" stroke-opacity="0.499207428" stroke="#FFFFFF" cx="88" cy="272" r="8"></circle>
+                    <path d="M-6.80011603e-15,255 L175,255" id="Line" stroke-opacity="0.499207428" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M-2.69845874e-16,26 L175,26" id="Line" stroke-opacity="0.499207428" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <g id="bubbles" transform="translate(10.000000, 72.000000)">
+                        <g id="bubble" transform="translate(41.080247, 112.105263)">
+                            <path d="M104.395062,10.4961708 L104.395062,2.00789789 C104.395062,0.894690093 103.503119,0 102.402851,0 L1.99221071,0 C0.90250133,0 0,0.898966504 0,2.00789789 L0,27.886839 C0,29.0000467 0.891943115,29.8947368 1.99221071,29.8947368 L102.402851,29.8947368 C103.49256,29.8947368 104.395062,28.9957703 104.395062,27.886839 L104.395062,18.4643555 L110.929256,14.4802632 L104.395062,10.4961708 Z" id="Combined-Shape" stroke-opacity="0.499207428" stroke="#FFFFFF"></path>
+                            <g id="Group" transform="translate(6.524691, 8.407895)" fill="#FFFFFF" fill-opacity="0.499207428">
+                                <rect id="Rectangle-59" x="0" y="0" width="41.0123457" height="1.86842105"></rect>
+                                <rect id="Rectangle-59" x="0" y="5.60526316" width="62.4506173" height="1.86842105"></rect>
+                                <rect id="Rectangle-59" x="0" y="11.2105263" width="71.7716049" height="1.86842105"></rect>
+                            </g>
+                        </g>
+                        <g id="bubble" transform="translate(41.080247, 0.000000)">
+                            <path d="M104.395062,10.4961708 L104.395062,2.00789789 C104.395062,0.894690093 103.503119,0 102.402851,0 L1.99221071,0 C0.90250133,0 0,0.898966504 0,2.00789789 L0,27.886839 C0,29.0000467 0.891943115,29.8947368 1.99221071,29.8947368 L102.402851,29.8947368 C103.49256,29.8947368 104.395062,28.9957703 104.395062,27.886839 L104.395062,18.4643555 L110.929256,14.4802632 L104.395062,10.4961708 Z" id="Combined-Shape" stroke-opacity="0.499207428" stroke="#FFFFFF"></path>
+                            <g id="Group" transform="translate(6.524691, 8.407895)" fill="#FFFFFF" fill-opacity="0.499207428">
+                                <rect id="Rectangle-59" x="0" y="0" width="41.0123457" height="1.86842105"></rect>
+                                <rect id="Rectangle-59" x="0" y="5.60526316" width="62.4506173" height="1.86842105"></rect>
+                                <rect id="Rectangle-59" x="0" y="11.2105263" width="71.7716049" height="1.86842105"></rect>
+                            </g>
+                        </g>
+                        <g id="bubble" transform="translate(56.419753, 71.986842) scale(-1, 1) translate(-56.419753, -71.986842) translate(0.919753, 56.986842)">
+                            <path d="M104.395062,10.4961708 L104.395062,2.00789789 C104.395062,0.894690093 103.503119,0 102.402851,0 L1.99221071,0 C0.90250133,0 1.42108547e-14,0.898966504 1.42108547e-14,2.00789789 L1.42108547e-14,27.886839 C1.42108547e-14,29.0000467 0.891943115,29.8947368 1.99221071,29.8947368 L102.402851,29.8947368 C103.49256,29.8947368 104.395062,28.9957703 104.395062,27.886839 L104.395062,18.4643555 L110.929256,14.4802632 L104.395062,10.4961708 Z" id="Combined-Shape" stroke-opacity="0.499207428" stroke="#FFFFFF"></path>
+                            <g id="Group" transform="translate(6.524691, 8.407895)" fill="#FFFFFF" fill-opacity="0.499207428">
+                                <rect id="Rectangle-59" x="0" y="0" width="41.0123457" height="1.86842105"></rect>
+                                <rect id="Rectangle-59" x="0" y="5.60526316" width="62.4506173" height="1.86842105"></rect>
+                                <rect id="Rectangle-59" x="0" y="11.2105263" width="71.7716049" height="1.86842105"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

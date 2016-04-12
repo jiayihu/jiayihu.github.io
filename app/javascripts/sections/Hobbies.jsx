@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Hobbies() {
   return (
-    <section className="hobbies container">
-      <div className="row">
+    <section className="hobbies">
+      <div className="container">
         <div className="col-sm-7">
           <h2 className="hobbies__heading">I LOVE</h2>
         </div>

@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   transform: translateX(-50%);
-  transition: color .7s ease-out;
+  transition: color .3s ease-out;
   z-index: 9;
 
   @media (max-width: $screen-tablet) {

@@ -70,7 +70,8 @@ export default class ContactForm extends React.Component {
     }
 
     const req = new XMLHttpRequest();
-    req.open('POST', 'https://formspree.io/steph.jiayi@gmail.com');
+    req.open('POST', 'https://formspree.io/steph.jiayi@gmail.com', true);
+    req.setRequestHeader('Accept', 'application/json');
     req.addEventListener('load', (e) => {
       if ((e.target.status >= 200) && (e.target.status << 400)) {
         this.notifMsg = 'Your message has been delivered. I\'ll reply as soon as possible!';

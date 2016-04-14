@@ -25,6 +25,25 @@
   width: 9.5rem;
 }
 
+@media (max-width: 767px) {
+  .slider-decorator-0,
+  .slider-decorator-1,
+  .carousel-dots {
+    display: none;
+  }
+
+  .slider-list {
+    transition: all .4s ease-out !important;
+    width: 100% !important;
+  }
+
+  .slider-slide {
+    display: block !important;
+    width: 100% !important;
+  }
+
+}
+
 .carousel-dots {
   list-style-type: none;
   padding-left: 0;

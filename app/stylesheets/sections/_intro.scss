@@ -1,6 +1,7 @@
 .intro {
   background-color: $gray-darker;
   color: $white;
+  min-height: 100vh;
   padding: 0;
   position: relative;
   transition: opacity .5s ease-out;

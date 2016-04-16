@@ -14,7 +14,7 @@ export default class About extends React.Component {
       .addScene(2000)
       .addScene('me:Student of Computer Science')
       .addScene(3000)
-      .addScene('me:Addicted book reader')
+      .addScene('me:Addicted-Book Reader')
       .addScene(3000)
       .addScene('me:Tardis traveller')
       .addScene(theater.replay);

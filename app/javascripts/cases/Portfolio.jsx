@@ -99,8 +99,13 @@ export default function Portfolio() {
           repaint in order to help you debug.</p>
 
           <blockquote>
-              For all the rest there's <del>Mastercard</del> Gulp.
+              For all the rest there's <del>Mastercard</del> <a href="http://gulpjs.com/" target="_blank">Gulp</a>.
           </blockquote>
+
+          <figure>
+              <img src="/images/cases/portfolio/pingdom.png" alt="Pingdom Website Speed test" />
+              <figcaption>Speed test result after some other tweaks like GZip and Cache</figcaption>
+          </figure>
 
           <h3>Conclusion</h3>
           <p>I feel like I grew a bit wiser after finishing my portfolio.</p>

@@ -96,7 +96,7 @@ export default class ContactForm extends React.Component {
     const isMsgValid = msg.length > 10;
 
     let error = '';
-    error += !isNameValid ? ' Name have must be between 0 and 32 characters.' : '';
+    error += !isNameValid ? ' Name length must be between 0 and 32 characters.' : '';
     error += !isEmailValid ? ' Email must be valid.' : '';
     error += !isMsgValid ? ' The message should contains at least 10 characters.' : '';
 

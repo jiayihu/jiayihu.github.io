@@ -37,8 +37,8 @@
   transform: translateX(-50%);
 
   circle {
-    will-change: transform;
     animation: 2.5s ease-out infinite scroll;
+    will-change: transform;
   }
 
   @media(max-width: $screen-desktop) {

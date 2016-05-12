@@ -34,7 +34,7 @@ const Projects = React.createClass({
       {
         preview: '/images/showcase/kanban.svg',
         title: 'Kanban Board',
-        tags: '#REACT #REDUX #ENZYME',
+        tags: '#REACT #REDUX',
         url: '/project/kanban',
       },
       {

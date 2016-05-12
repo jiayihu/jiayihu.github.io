@@ -46,7 +46,7 @@ export default class Contact extends React.Component {
           <div className="col-sm-3 col-sm-offset-1 col-lg-4 col-lg-offset-2">
             <ul className="contacts-list">
               <li>
-                <a className="link" href="mailto:steph.jiayi@gmail.com" target="_blank">Email</a>
+                <a className="link" href="mailto:contact@jiayihu.me" target="_blank">Email</a>
               </li>
               <li>
                 <a className="link" href="https://github.com/jiayihu" target="_blank">Github</a>

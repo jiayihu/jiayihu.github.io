@@ -86,8 +86,7 @@ export default function Portfolio() {
           </figure>
 
           <h3>Performance</h3>
-          <p>I'm still new in React Performance field, but I always care a lot
-          about speed because it's fundamental when trying to deliver a smooth user navigation. <br />
+          <p>How your application/website performs is fundamental when trying to deliver a smooth user navigation. <br />
           I didn't use <code>shouldComponentUpdate</code> because the application doesn't have huge
           and highly frequent renders, but I applied nevertheless some good practises like clearing DOM
           event listeners when components will be unmounted to <strong>avoid memory leaks</strong>. <br />

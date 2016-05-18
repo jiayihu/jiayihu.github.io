@@ -9,9 +9,6 @@ export default function Reading() {
         </div>
         <div className="col-sm-5">
           <ul className="hobbies-list">
-            <li className="hobbies-list__item hobbies-list__item--separate">
-              <a href="http://javascriptplayground.com/the-refactoring-tales/refactoring-tales.html" target="_blank">The Refactoring Tales - Jack Franklin</a>
-            </li>
             <li className="hobbies-list__item">
               <a href="http://shop.oreilly.com/product/0636920033141.do" target="_blank">Programming Javascript Applications - Eric Elliott</a>
             </li>

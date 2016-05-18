@@ -19,7 +19,8 @@ export default function Skills() {
             <li>ESLint</li>
             <li>SCSS</li>
             <li>Gulp + Browserify</li>
-            <li>Mocha + Chai</li>
+            <li>Webpack</li>
+            <li>Mocha + Enzyme + Sinon</li>
           </ul>
           <h3>DESIGN</h3>
           <ul className="skills-list">

@@ -7,10 +7,10 @@
     "url": "git@github.com:jiayihu/jiayihu.github.io.git"
   },
   "scripts": {
-    "build": "gulp",
+    "build": "npm run clean && NODE_ENV=production gulp production",
     "clean": "rm -rf public && mkdir public ",
-    "dev": "gulp",
-    "production": "npm run clean && NODE_ENV=production gulp production",
+    "deploy": "surge ./public",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jiayi hu",

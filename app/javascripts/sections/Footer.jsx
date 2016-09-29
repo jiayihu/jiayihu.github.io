@@ -8,7 +8,7 @@ export default function Footer() {
         <svg><use xlinkHref="/images/icons.svg#love"></use></svg>
       </p>
       <p>This website is made with React.js, love and crazy stuff.</p>
-      <p className="copy">Giovanni Jiayi Hu © 2016. All rights reserved.</p>
+      <p className="copy">Giovanni Jiayi Hu © 2016. VAT 01533630297. All rights reserved.</p>
     </footer>
   );
 }
